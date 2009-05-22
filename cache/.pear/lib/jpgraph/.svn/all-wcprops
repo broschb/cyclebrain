@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph
+END
+imgdata_stars.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_stars.inc.php
+END
+imgdata_balls.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_balls.inc.php
+END
+jpgraph_log.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_log.php
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/VERSION
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/CHANGELOG
+END
+jpgraph_iconplot.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_iconplot.php
+END
+gd_image.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/gd_image.inc.php
+END
+flags_thumb100x100.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/flags_thumb100x100.dat
+END
+jpgraph_flags.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_flags.php
+END
+jpgraph_antispam-digits.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_antispam-digits.php
+END
+jpgraph_gb2312.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_gb2312.php
+END
+jpgraph_plotmark.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_plotmark.inc.php
+END
+imgdata_bevels.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_bevels.inc.php
+END
+jpgraph_scatter.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_scatter.php
+END
+jpgraph_ttf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_ttf.inc.php
+END
+jpgraph_date.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_date.php
+END
+jpgraph_gantt.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_gantt.php
+END
+jpgraph_mgraph.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_mgraph.php
+END
+jpg-config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/jpg-config.inc.php
+END
+jpgraph.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph.php
+END
+imgdata_diamonds.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_diamonds.inc.php
+END
+jpgraph_stock.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_stock.php
+END
+jpgraph_imgtrans.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_imgtrans.php
+END
+jpgraph_line.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_line.php
+END
+jpgraph_radar.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_radar.php
+END
+jpgraph_error.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_error.php
+END
+imgdata_pushpins.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_pushpins.inc.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/README
+END
+jpgraph_gradient.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_gradient.php
+END
+jpgraph_errhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_errhandler.inc.php
+END
+flags.dat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/flags.dat
+END
+jpgraph_plotband.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_plotband.php
+END
+jpgraph_led.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_led.php
+END
+jpgraph_bar.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_bar.php
+END
+jpgraph_pie3d.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_pie3d.php
+END
+flags_thumb60x60.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/flags_thumb60x60.dat
+END
+imgdata_squares.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/imgdata_squares.inc.php
+END
+jpgraph_canvtools.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_canvtools.php
+END
+jpgraph_utils.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_utils.inc.php
+END
+QPL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/QPL.txt
+END
+flags_thumb35x35.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/flags_thumb35x35.dat
+END
+jpgraph_regstat.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_regstat.php
+END
+jpgraph_canvas.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/6900/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_canvas.php
+END
+jpgraph_antispam.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_antispam.php
+END
+jpgraph_pie.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_pie.php
+END
+jpgraph_polar.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/6910/plugins/dwJpgraphPlugin/lib/jpgraph/jpgraph_polar.php
+END

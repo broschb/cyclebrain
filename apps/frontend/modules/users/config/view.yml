@@ -1,0 +1,5 @@
+captchaImageSuccess:
+  has_layout: off
+  http_metas:
+    content-type: image/jpeg
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/VerboseSending
+END
+AbstractView.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/VerboseSending/AbstractView.php
+END
+DefaultView.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/VerboseSending/DefaultView.php
+END

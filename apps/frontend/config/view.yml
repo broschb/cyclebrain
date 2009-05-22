@@ -1,0 +1,20 @@
+default:
+  http_metas:
+    content-type: text/html
+  components:
+    sidebar:      [sidebar, default]
+
+
+  metas:
+    title:        CycleBrain
+    robots:       index, follow
+    description:  Free cycling website to track and manage all bicycling related activities.  Track mileage by ride, bicycle and equipment, as well as mapping rides and creating reports and charts on gathered statistics
+    keywords:     bike, cycle, bicycle, tracking, map, mapping, log, journal, report, graph, bikelog, mileage, miles, stat, statistic, fitness
+    language:     en
+
+  stylesheets:    [main,bike,menu,niftyCorners]
+
+  javascripts:    [validate,nifty,util]
+
+  has_layout:     on
+  layout:         layout

@@ -1,0 +1,19 @@
+## YAML Template.
+
+login:
+  is_secure: off
+
+add:
+  is_secure: off
+
+authenticate:
+  is_secure: off
+
+newUser:
+  is_secure: off
+  
+forgot:
+  is_secure: off
+
+all:
+  is_secure: on

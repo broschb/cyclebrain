@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache
+END
+Disk.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache/Disk.php
+END
+OutputStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache/OutputStream.php
+END
+JointOutputStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache/JointOutputStream.php
+END
+Memory.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache/Memory.php
+END

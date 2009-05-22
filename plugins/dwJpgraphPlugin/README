@@ -1,0 +1,22 @@
+dwJpgraphPlugin
+===============
+
+The `dwJpgraphPlugin` provides abstraction for the PHP Jpgraph library.
+
+
+Installation
+------------
+
+  * *Install the plugin*
+
+    symfony plugin:install dwJpgraphPlugin
+
+  * *Clear you cache*
+
+    symfony cc
+
+
+Using the plugin
+----------------
+
+See the example module/action: dwJpgraphPlugin/test.

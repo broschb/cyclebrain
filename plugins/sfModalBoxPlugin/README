@@ -1,0 +1,83 @@
+sfModalBoxPlugin symfony plugin
+===============================
+The `sfModalBoxPlugin` is a symfony plugin that provides integration with [http://www.wildbit.com/labs/modalbox/ ModalBox].
+ModalBox is a JavaScript technique for creating modern (Web 2.0-style) modal dialogs or even wizards (sequences of dialogs) without using conventional popups and page reloads.
+It’s inspired by Mac OS X modal dialogs.
+
+ModalBox is built with pure JavaScript and is based on Sam Stephenson’s excellent Prototype JavaScript Framework, script.aculo.us and valid XHTML/CSS. 
+ModalBox uses AJAX to load content.
+
+Installation
+------------
+    * For symfony 1.0.x
+	symfony plugin-install http://plugins.symfony-project.com/sfModalBoxPlugin
+    * For symfony 1.1.x
+	plugin:install sfModalBoxPlugin --release=1.0.0 
+
+Usage
+-----
+
+#### Example 1
+    [php]
+    <?php use_helper('ModalBox') ?>
+    <?php echo m_link_to('link name', 
+                         '@remote_route_for_action', 
+                         array('title' => __('Retrieve Forgotten Password')), 
+                         array('width' => 400, 'height' => 180)) ?>
+	
+#### Example 2
+    [php]
+	<?php use_helper('ModalBox') ?>
+    <?php echo javascript_tag(m_link_to_function(url_for('mymodule/index'), 
+	                                             array('title' => 'Window Title'))); ?>
+	 
+	//	This is equivalent to
+	`<script type="text/javascript">
+    //<![CDATA[
+      Modalbox.show('/frontend_dev.php/mymodule', {title:"Window Title"}); 
+    //]]>
+    </script>`
+
+#### Example 3
+    [php]
+	<?php use_helper('ModalBox') ?>	
+    <?php echo javascript_tag(m_link_to_function(url_for('mymodule/index'), 
+	                                             array('title' => 'Window Title'), true)); ?>
+	//	This is equivalent to
+	`<script type="text/javascript">
+    //<![CDATA[
+      Modalbox.show('/frontend_dev.php/mymodule', {title:"Window Title"});
+      Modalbox.deactivate();		
+    //]]>
+    </script>`
+	
+#### Example 4 - This template will open in a modal window	
+    [php]
+	<?php use_helper('ModalBox') ?>
+
+	<div id="hiddendiv" style="display:none">
+		<div id="myform">
+			<form action="<?php echo url_for('mymodule/index') ?>" method="POST">
+			  <table>
+				<?php echo $form ?>
+				<tr>
+				  <td colspan="2" >
+					<input type="submit" />
+				  </td>
+				</tr>
+			  </table>
+			</form>
+		</div>
+	</div>
+
+	<?php echo 
+	javascript_tag(m_link_to_element("$('myform')", array('title' => 'Upload file with targets data',
+	                                                                 'width' => 300,
+																	 'inactiveFade' => false))); 
+	?>
+
+
+License
+-------
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.

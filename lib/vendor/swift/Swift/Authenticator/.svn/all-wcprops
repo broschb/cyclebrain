@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator
+END
+PLAIN.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator/PLAIN.php
+END
+@PopB4Smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator/@PopB4Smtp.php
+END
+CRAMMD5.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator/CRAMMD5.php
+END
+LOGIN.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator/LOGIN.php
+END

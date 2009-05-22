@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message
+END
+EmbeddedFile.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/EmbeddedFile.php
+END
+Headers.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Headers.php
+END
+Encoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Encoder.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Image.php
+END
+MimeException.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/MimeException.php
+END
+Part.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Part.php
+END
+Mime.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Mime.php
+END
+Attachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message/Attachment.php
+END

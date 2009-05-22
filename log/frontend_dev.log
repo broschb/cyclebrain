@@ -1,0 +1,975 @@
+Apr 26 08:27:28 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Apr 26 08:27:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+Apr 26 08:27:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Apr 26 08:27:28 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Apr 26 08:27:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Apr 26 08:27:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 26 08:27:28 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 26 08:27:28 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Apr 26 08:27:28 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+Apr 26 08:27:28 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Apr 26 08:27:28 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+Apr 26 08:27:28 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+Apr 26 08:27:28 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+Apr 26 08:27:28 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+Apr 26 08:27:28 symfony [info] {main} Call "sidebar->executeDefault()"
+Apr 26 08:27:28 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+Apr 26 08:27:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 26 08:27:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 26 08:27:28 symfony [info] {sfWebDebugLogger} Configuration 14310.66 ms (10)
+Apr 26 08:27:28 symfony [info] {sfWebDebugLogger} Action "main/index" 15.03 ms (1)
+Apr 26 08:27:28 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 301.53 ms (1)
+Apr 26 08:27:28 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+Apr 26 08:27:28 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 13.99 ms (1)
+Apr 26 08:27:28 symfony [info] {sfWebResponse} Send content (31584 o)
+May 03 20:35:58 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:35:58 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:35:58 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:35:58 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:35:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userbike with parameters array (  'module' => 'userbike',  'action' => 'index',)
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:35:58 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:35:58 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 03 20:35:58 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:35:58 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 03 20:35:59 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:35:59 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:35:59 symfony [info] {main} Call "sidebar->executeDefault()"
+May 03 20:35:59 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 03 20:35:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:35:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:35:59 symfony [info] {sfWebDebugLogger} Configuration 174.92 ms (14)
+May 03 20:35:59 symfony [info] {sfWebDebugLogger} Action "main/index" 2.03 ms (1)
+May 03 20:35:59 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 249.35 ms (1)
+May 03 20:35:59 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 03 20:35:59 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 10.14 ms (1)
+May 03 20:35:59 symfony [info] {sfWebResponse} Send content (32223 o)
+May 03 20:36:03 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:36:03 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:36:03 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:36:03 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:36:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/login with parameters array (  'module' => 'users',  'action' => 'login',)
+May 03 20:36:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:36:03 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:36:03 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:36:03 symfony [info] {usersActions} Call "usersActions->executeLogin()"
+May 03 20:36:04 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:36:04 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/loginSuccess.php"
+May 03 20:36:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:36:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:36:04 symfony [info] {sfWebDebugLogger} Configuration 113.95 ms (10)
+May 03 20:36:04 symfony [info] {sfWebDebugLogger} Action "users/login" 1.18 ms (1)
+May 03 20:36:04 symfony [info] {sfWebDebugLogger} View "Success" for "users/login" 75.16 ms (1)
+May 03 20:36:04 symfony [info] {sfWebResponse} Send content (1477 o)
+May 03 20:36:07 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:36:07 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:36:07 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:36:07 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:36:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/authenticate with parameters array (  'module' => 'users',  'action' => 'authenticate',)
+May 03 20:36:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:36:07 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:36:07 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:36:07 symfony [info] {usersActions} Call "usersActions->executeAuthenticate()"
+May 03 20:36:07 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:36:07 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USERNAME=:p1 LIMIT 1
+May 03 20:36:07 symfony [debug] {sfPropelLogger} Binding 'broschb' at position :p1 w/ PDO type PDO::PARAM_STR
+May 03 20:36:08 symfony [info] @@@@@@@@@@AUTHOK broschb
+May 03 20:36:08 symfony [info] {myUser} User is authenticated
+May 03 20:36:08 symfony [info] {myUser} Add credential(s) "subscriber"
+May 03 20:36:08 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 03 20:36:08 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:08 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:36:08 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/authenticateSuccess.php"
+May 03 20:36:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:36:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:36:08 symfony [info] {sfWebDebugLogger} Configuration 3.89 ms (9)
+May 03 20:36:08 symfony [info] {sfWebDebugLogger} Action "users/authenticate" 160.68 ms (1)
+May 03 20:36:08 symfony [info] {sfWebDebugLogger} View "Success" for "users/authenticate" 372.51 ms (1)
+May 03 20:36:08 symfony [info] {sfWebResponse} Send content (124 o)
+May 03 20:36:09 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:36:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:36:09 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:36:09 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:36:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userbike with parameters array (  'module' => 'userbike',  'action' => 'index',)
+May 03 20:36:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:36:09 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:36:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:36:09 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:36:09 symfony [info] {userbikeActions} Call "userbikeActions->executeIndex()"
+May 03 20:36:09 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:36:09 symfony [debug] {sfPropelLogger} prepare: SELECT user_bikes.USER_ID, user_bikes.USER_BIKE_ID, user_bikes.BIKE_YEAR, user_bikes.BIKE_MAKE, user_bikes.BIKE_MODEL, user_bikes.EQUIP_FUNCTION, user_bikes.DESCRIPTION, users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `user_bikes` LEFT JOIN users ON (user_bikes.USER_ID=users.USER_ID) WHERE user_bikes.USER_ID=:p1
+May 03 20:36:09 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:36:10 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/userbike/templates/indexSuccess.php"
+May 03 20:36:10 symfony [debug] {sfPropelLogger} prepare: SELECT SUM(user_rides.MILEAGE) FROM `user_rides`, `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2 AND user_rides.USER_RIDE_ID=user_stats.RIDE_KEY
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [info] @@@@@@@@@getMileageFromMetersIN 172280.27
+May 03 20:36:10 symfony [info] @@@@@@@@@getMileageFromMetersOUT 1 107.049996728
+May 03 20:36:10 symfony [debug] {sfPropelLogger} prepare: SELECT MAX(user_stats.RIDE_DATE) FROM `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [debug] {sfPropelLogger} prepare: SELECT SUM(user_rides.MILEAGE) FROM `user_rides`, `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2 AND user_rides.USER_RIDE_ID=user_stats.RIDE_KEY
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 3 at position :p2 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [info] @@@@@@@@@getMileageFromMetersIN 
+May 03 20:36:10 symfony [info] @@@@@@@@@getMileageFromMetersOUT 1 0
+May 03 20:36:10 symfony [debug] {sfPropelLogger} prepare: SELECT MAX(user_stats.RIDE_DATE) FROM `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [debug] {sfPropelLogger} Binding 3 at position :p2 w/ PDO type PDO::PARAM_INT
+May 03 20:36:10 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:10 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:10 symfony [info] {main} Call "sidebar->executeDefault()"
+May 03 20:36:10 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 03 20:36:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:36:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:36:10 symfony [info] {sfWebDebugLogger} Configuration 49.71 ms (11)
+May 03 20:36:10 symfony [info] {sfWebDebugLogger} Action "userbike/index" 218.86 ms (1)
+May 03 20:36:10 symfony [info] {sfWebDebugLogger} View "Success" for "userbike/index" 237.33 ms (1)
+May 03 20:36:10 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 03 20:36:10 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 17.51 ms (1)
+May 03 20:36:10 symfony [info] {sfWebResponse} Send content (35109 o)
+May 03 20:36:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:36:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:36:13 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:36:13 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:36:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/profile with parameters array (  'module' => 'users',  'action' => 'profile',)
+May 03 20:36:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:36:13 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:36:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:36:13 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:36:13 symfony [info] {usersActions} Call "usersActions->executeProfile()"
+May 03 20:36:13 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:36:13 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 03 20:36:13 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:13 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:36:13 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/profileSuccess.php"
+May 03 20:36:13 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:13 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:13 symfony [info] {main} Call "sidebar->executeDefault()"
+May 03 20:36:13 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 03 20:36:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:36:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:36:13 symfony [info] {sfWebDebugLogger} Configuration 2.58 ms (10)
+May 03 20:36:13 symfony [info] {sfWebDebugLogger} Action "users/profile" 52.27 ms (1)
+May 03 20:36:13 symfony [info] {sfWebDebugLogger} View "Success" for "users/profile" 44.61 ms (1)
+May 03 20:36:13 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.10 ms (1)
+May 03 20:36:13 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.96 ms (1)
+May 03 20:36:13 symfony [info] {sfWebResponse} Send content (32149 o)
+May 03 20:36:17 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:36:17 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:36:17 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:36:17 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:36:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 03 20:36:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:36:17 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:36:17 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:36:17 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:36:17 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 03 20:36:17 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:36:17 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 03 20:36:17 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:17 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 03 20:36:17 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:17 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 03 20:36:17 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:36:17 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:36:17 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 03 20:36:17 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:17 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:36:17 symfony [info] {main} Call "sidebar->executeDefault()"
+May 03 20:36:17 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 03 20:36:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:36:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:36:17 symfony [info] {sfWebDebugLogger} Configuration 10.51 ms (10)
+May 03 20:36:17 symfony [info] {sfWebDebugLogger} Action "users/edit" 301.81 ms (1)
+May 03 20:36:17 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 231.91 ms (1)
+May 03 20:36:17 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 03 20:36:17 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 5.85 ms (1)
+May 03 20:36:17 symfony [info] {sfWebResponse} Send content (34859 o)
+May 03 20:44:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:44:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:44:34 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:44:34 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:44:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 03 20:44:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:44:34 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:44:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:44:34 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:44:34 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 03 20:44:34 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:44:34 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 03 20:44:34 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:44:34 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 03 20:44:34 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:44:34 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 03 20:44:34 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:44:34 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:44:34 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 03 20:45:59 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 03 20:45:59 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 03 20:45:59 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 03 20:45:59 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 03 20:45:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 03 20:45:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 03 20:45:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 03 20:45:59 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 03 20:45:59 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 03 20:45:59 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 03 20:46:00 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 03 20:46:00 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 03 20:46:00 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:46:00 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 03 20:46:00 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:46:00 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 03 20:46:00 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 03 20:46:00 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 03 20:46:00 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 03 20:46:00 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 03 20:46:00 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:46:00 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 03 20:46:00 symfony [info] {main} Call "sidebar->executeDefault()"
+May 03 20:46:00 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 03 20:46:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 03 20:46:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 03 20:46:00 symfony [info] {sfWebDebugLogger} Configuration 2.71 ms (10)
+May 03 20:46:00 symfony [info] {sfWebDebugLogger} Action "users/edit" 86.43 ms (1)
+May 03 20:46:00 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 141.60 ms (1)
+May 03 20:46:00 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 03 20:46:00 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 3.09 ms (1)
+May 03 20:46:00 symfony [info] {sfWebResponse} Send content (42375 o)
+May 04 08:00:15 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 08:00:15 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 08:00:15 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 08:00:15 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 08:00:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 08:00:15 symfony [info] {myUser} Automatic user logout due to timeout
+May 04 08:00:15 symfony [info] {myUser} User is not authenticated
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 08:00:16 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 08:00:16 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 04 08:00:16 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 08:00:16 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 08:00:16 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 08:00:16 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 08:00:16 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 04 08:00:16 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 08:00:17 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 08:00:17 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 08:00:17 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 08:00:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 08:00:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 08:00:17 symfony [info] {sfWebDebugLogger} Configuration 34.24 ms (13)
+May 04 08:00:17 symfony [info] {sfWebDebugLogger} Action "main/index" 724.00 ms (1)
+May 04 08:00:17 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 372.66 ms (1)
+May 04 08:00:17 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 04 08:00:17 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 9.78 ms (1)
+May 04 08:00:17 symfony [info] {sfWebResponse} Send content (33493 o)
+May 04 09:37:11 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 09:37:11 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 09:37:11 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 09:37:11 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 09:37:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 09:37:11 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 04 09:37:12 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 09:37:12 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 04 09:37:12 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 09:37:12 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 09:37:12 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 09:37:12 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 09:37:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 09:37:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 09:37:12 symfony [info] {sfWebDebugLogger} Configuration 7.81 ms (13)
+May 04 09:37:12 symfony [info] {sfWebDebugLogger} Action "main/index" 0.74 ms (1)
+May 04 09:37:12 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 59.67 ms (1)
+May 04 09:37:12 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 09:37:12 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 1.77 ms (1)
+May 04 09:37:12 symfony [info] {sfWebResponse} Send content (32309 o)
+May 04 20:30:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:30:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:30:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:30:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:30:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userbike with parameters array (  'module' => 'userbike',  'action' => 'index',)
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:30:47 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:30:47 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 04 20:30:47 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:30:47 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 04 20:30:47 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:30:47 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:30:47 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 20:30:47 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 20:30:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:30:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:30:47 symfony [info] {sfWebDebugLogger} Configuration 50.28 ms (13)
+May 04 20:30:47 symfony [info] {sfWebDebugLogger} Action "main/index" 1.47 ms (1)
+May 04 20:30:47 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 51.61 ms (1)
+May 04 20:30:47 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 20:30:47 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.44 ms (1)
+May 04 20:30:47 symfony [info] {sfWebResponse} Send content (32314 o)
+May 04 20:30:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:30:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:30:52 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:30:52 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:30:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/login with parameters array (  'module' => 'users',  'action' => 'login',)
+May 04 20:30:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:30:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:30:52 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:30:52 symfony [info] {usersActions} Call "usersActions->executeLogin()"
+May 04 20:30:52 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:30:52 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/loginSuccess.php"
+May 04 20:30:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:30:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:30:52 symfony [info] {sfWebDebugLogger} Configuration 2.40 ms (9)
+May 04 20:30:52 symfony [info] {sfWebDebugLogger} Action "users/login" 0.83 ms (1)
+May 04 20:30:52 symfony [info] {sfWebDebugLogger} View "Success" for "users/login" 33.89 ms (1)
+May 04 20:30:52 symfony [info] {sfWebResponse} Send content (1477 o)
+May 04 20:30:55 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:30:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:30:55 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:30:55 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:30:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/authenticate with parameters array (  'module' => 'users',  'action' => 'authenticate',)
+May 04 20:30:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:30:55 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:30:55 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:30:55 symfony [info] {usersActions} Call "usersActions->executeAuthenticate()"
+May 04 20:30:55 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 20:30:55 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USERNAME=:p1 LIMIT 1
+May 04 20:30:55 symfony [debug] {sfPropelLogger} Binding 'broschb' at position :p1 w/ PDO type PDO::PARAM_STR
+May 04 20:30:55 symfony [info] @@@@@@@@@@AUTHOK broschb
+May 04 20:30:55 symfony [info] {myUser} User is authenticated
+May 04 20:30:55 symfony [info] {myUser} Add credential(s) "subscriber"
+May 04 20:30:55 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 20:30:55 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:55 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:30:55 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/authenticateSuccess.php"
+May 04 20:30:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:30:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:30:55 symfony [info] {sfWebDebugLogger} Configuration 7.43 ms (9)
+May 04 20:30:55 symfony [info] {sfWebDebugLogger} Action "users/authenticate" 129.97 ms (1)
+May 04 20:30:55 symfony [info] {sfWebDebugLogger} View "Success" for "users/authenticate" 46.31 ms (1)
+May 04 20:30:55 symfony [info] {sfWebResponse} Send content (124 o)
+May 04 20:30:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:30:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:30:56 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:30:56 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:30:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userbike with parameters array (  'module' => 'userbike',  'action' => 'index',)
+May 04 20:30:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:30:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 20:30:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:30:56 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:30:56 symfony [info] {userbikeActions} Call "userbikeActions->executeIndex()"
+May 04 20:30:56 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 20:30:56 symfony [debug] {sfPropelLogger} prepare: SELECT user_bikes.USER_ID, user_bikes.USER_BIKE_ID, user_bikes.BIKE_YEAR, user_bikes.BIKE_MAKE, user_bikes.BIKE_MODEL, user_bikes.EQUIP_FUNCTION, user_bikes.DESCRIPTION, users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `user_bikes` LEFT JOIN users ON (user_bikes.USER_ID=users.USER_ID) WHERE user_bikes.USER_ID=:p1
+May 04 20:30:56 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:30:57 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/userbike/templates/indexSuccess.php"
+May 04 20:30:57 symfony [debug] {sfPropelLogger} prepare: SELECT SUM(user_rides.MILEAGE) FROM `user_rides`, `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2 AND user_rides.USER_RIDE_ID=user_stats.RIDE_KEY
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [info] @@@@@@@@@getMileageFromMetersIN 172280.27
+May 04 20:30:57 symfony [info] @@@@@@@@@getMileageFromMetersOUT 1 107.049996728
+May 04 20:30:57 symfony [debug] {sfPropelLogger} prepare: SELECT MAX(user_stats.RIDE_DATE) FROM `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p2 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [debug] {sfPropelLogger} prepare: SELECT SUM(user_rides.MILEAGE) FROM `user_rides`, `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2 AND user_rides.USER_RIDE_ID=user_stats.RIDE_KEY
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 3 at position :p2 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [info] @@@@@@@@@getMileageFromMetersIN 
+May 04 20:30:57 symfony [info] @@@@@@@@@getMileageFromMetersOUT 1 0
+May 04 20:30:57 symfony [debug] {sfPropelLogger} prepare: SELECT MAX(user_stats.RIDE_DATE) FROM `user_stats` WHERE user_stats.USER_ID=:p1 AND user_stats.BIKE_ID=:p2
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [debug] {sfPropelLogger} Binding 3 at position :p2 w/ PDO type PDO::PARAM_INT
+May 04 20:30:57 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:30:57 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:30:57 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 20:30:57 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 20:30:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:30:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:30:57 symfony [info] {sfWebDebugLogger} Configuration 3.19 ms (10)
+May 04 20:30:57 symfony [info] {sfWebDebugLogger} Action "userbike/index" 144.08 ms (1)
+May 04 20:30:57 symfony [info] {sfWebDebugLogger} View "Success" for "userbike/index" 164.95 ms (1)
+May 04 20:30:57 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 20:30:57 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 9.34 ms (1)
+May 04 20:30:57 symfony [info] {sfWebResponse} Send content (35107 o)
+May 04 20:31:01 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:31:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:31:01 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:31:01 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:31:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/profile with parameters array (  'module' => 'users',  'action' => 'profile',)
+May 04 20:31:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:31:01 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 20:31:01 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:31:01 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:31:01 symfony [info] {usersActions} Call "usersActions->executeProfile()"
+May 04 20:31:01 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 20:31:01 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 20:31:01 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:31:01 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:31:01 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/profileSuccess.php"
+May 04 20:31:01 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:31:01 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:31:01 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 20:31:01 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 20:31:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:31:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:31:01 symfony [info] {sfWebDebugLogger} Configuration 4.76 ms (10)
+May 04 20:31:01 symfony [info] {sfWebDebugLogger} Action "users/profile" 115.13 ms (1)
+May 04 20:31:01 symfony [info] {sfWebDebugLogger} View "Success" for "users/profile" 83.70 ms (1)
+May 04 20:31:01 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 04 20:31:01 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 5.02 ms (1)
+May 04 20:31:01 symfony [info] {sfWebResponse} Send content (32150 o)
+May 04 20:31:04 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 20:31:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 20:31:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 20:31:04 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 20:31:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 20:31:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 20:31:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 20:31:04 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 20:31:04 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 20:31:04 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 20:31:04 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 20:31:04 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 20:31:05 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:31:05 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 20:31:05 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:31:05 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 20:31:05 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 20:31:05 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 20:31:05 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 20:31:05 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 20:31:05 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:31:05 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 20:31:05 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 20:31:05 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 20:31:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 20:31:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 20:31:05 symfony [info] {sfWebDebugLogger} Configuration 2.65 ms (10)
+May 04 20:31:05 symfony [info] {sfWebDebugLogger} Action "users/edit" 76.71 ms (1)
+May 04 20:31:05 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 210.63 ms (1)
+May 04 20:31:05 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 20:31:05 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.74 ms (1)
+May 04 20:31:05 symfony [info] {sfWebResponse} Send content (42397 o)
+May 04 21:05:38 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:05:38 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:05:38 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:05:38 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:05:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:05:38 symfony [info] {myUser} Automatic user logout due to timeout
+May 04 21:05:38 symfony [info] {myUser} User is not authenticated
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:05:38 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:05:38 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 04 21:05:38 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:05:38 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:05:38 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:05:38 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:05:38 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 04 21:05:38 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:05:38 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:05:38 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:05:38 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:05:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:05:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:05:38 symfony [info] {sfWebDebugLogger} Configuration 5.83 ms (13)
+May 04 21:05:38 symfony [info] {sfWebDebugLogger} Action "main/index" 139.08 ms (1)
+May 04 21:05:38 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 94.64 ms (1)
+May 04 21:05:38 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 04 21:05:38 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.80 ms (1)
+May 04 21:05:38 symfony [info] {sfWebResponse} Send content (33622 o)
+May 04 21:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:05:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/login with parameters array (  'module' => 'users',  'action' => 'login',)
+May 04 21:05:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:05:43 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:05:43 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:05:43 symfony [info] {usersActions} Call "usersActions->executeLogin()"
+May 04 21:05:43 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:05:43 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/loginSuccess.php"
+May 04 21:05:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:05:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:05:43 symfony [info] {sfWebDebugLogger} Configuration 2.73 ms (9)
+May 04 21:05:43 symfony [info] {sfWebDebugLogger} Action "users/login" 0.71 ms (1)
+May 04 21:05:43 symfony [info] {sfWebDebugLogger} View "Success" for "users/login" 31.44 ms (1)
+May 04 21:05:43 symfony [info] {sfWebResponse} Send content (1479 o)
+May 04 21:05:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:05:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:05:47 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:05:47 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:05:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/authenticate with parameters array (  'module' => 'users',  'action' => 'authenticate',)
+May 04 21:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:05:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:05:47 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:05:47 symfony [info] {usersActions} Call "usersActions->executeAuthenticate()"
+May 04 21:05:47 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:05:47 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USERNAME=:p1 LIMIT 1
+May 04 21:05:47 symfony [debug] {sfPropelLogger} Binding 'broschb' at position :p1 w/ PDO type PDO::PARAM_STR
+May 04 21:05:47 symfony [info] @@@@@@@@@@AUTHOK broschb
+May 04 21:05:47 symfony [info] {myUser} User is authenticated
+May 04 21:05:47 symfony [info] {myUser} Add credential(s) "subscriber"
+May 04 21:05:47 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:05:47 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:05:47 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:05:47 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/authenticateSuccess.php"
+May 04 21:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:05:47 symfony [info] {sfWebDebugLogger} Configuration 4.94 ms (9)
+May 04 21:05:47 symfony [info] {sfWebDebugLogger} Action "users/authenticate" 90.09 ms (1)
+May 04 21:05:47 symfony [info] {sfWebDebugLogger} View "Success" for "users/authenticate" 40.09 ms (1)
+May 04 21:05:47 symfony [info] {sfWebResponse} Send content (124 o)
+May 04 21:05:48 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:05:48 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:05:48 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:05:48 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:05:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:05:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:05:48 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:05:48 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:05:48 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:05:48 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 21:05:48 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:05:48 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:05:48 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:05:48 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:05:48 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:05:48 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 21:05:48 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:05:48 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:05:48 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 21:05:49 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 21:05:49 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:05:49 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:05:49 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:05:49 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:05:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:05:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:05:49 symfony [info] {sfWebDebugLogger} Configuration 4.35 ms (10)
+May 04 21:05:49 symfony [info] {sfWebDebugLogger} Action "users/edit" 118.51 ms (1)
+May 04 21:05:49 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 186.98 ms (1)
+May 04 21:05:49 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 21:05:49 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.64 ms (1)
+May 04 21:05:49 symfony [info] {sfWebResponse} Send content (42827 o)
+May 04 21:07:06 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:07:06 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:07:06 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:07:06 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:07:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:07:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:07:07 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:07:07 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:07:07 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:07:07 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 21:07:07 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:07:07 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:07:07 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:07:07 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:07:07 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:07:07 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 21:07:07 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:07:07 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:07:07 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 21:07:07 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 21:07:07 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:07:07 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:07:07 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:07:07 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:07:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:07:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:07:07 symfony [info] {sfWebDebugLogger} Configuration 23.44 ms (10)
+May 04 21:07:07 symfony [info] {sfWebDebugLogger} Action "users/edit" 221.22 ms (1)
+May 04 21:07:07 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 318.33 ms (1)
+May 04 21:07:07 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 04 21:07:07 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 13.68 ms (1)
+May 04 21:07:07 symfony [info] {sfWebResponse} Send content (42802 o)
+May 04 21:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:07:12 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:07:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:07:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:07:12 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:07:12 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:07:12 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:07:12 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:07:12 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:07:12 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:07:12 symfony [debug] {sfPropelLogger} Binding '5' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:07:12 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:07:12 symfony [err] {sfRenderException} The template "getStatesSuccess.php" does not exist or is unreadable in "".
+May 04 21:08:04 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:08:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:08:04 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:08:04 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:08:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:08:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:08:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:08:04 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:08:04 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:08:04 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 21:08:04 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:08:04 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:08:04 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:04 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:08:04 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:04 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 21:08:04 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:04 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:08:04 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 21:08:04 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 21:08:04 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:08:04 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:08:04 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:08:04 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:08:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:08:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:08:04 symfony [info] {sfWebDebugLogger} Configuration 7.92 ms (10)
+May 04 21:08:04 symfony [info] {sfWebDebugLogger} Action "users/edit" 165.42 ms (1)
+May 04 21:08:04 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 219.01 ms (1)
+May 04 21:08:04 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 04 21:08:04 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 4.69 ms (1)
+May 04 21:08:04 symfony [info] {sfWebResponse} Send content (42799 o)
+May 04 21:08:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:08:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:08:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:08:08 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:08:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:08:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:08:08 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:08:08 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:08:08 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:08:08 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:08:08 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:08:08 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:08:08 symfony [debug] {sfPropelLogger} Binding '3' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:08 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:08:08 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:08:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:08:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:08:08 symfony [info] {sfWebDebugLogger} Configuration 6.81 ms (9)
+May 04 21:08:08 symfony [info] {sfWebDebugLogger} Action "users/getStates" 75.41 ms (1)
+May 04 21:08:08 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 35.36 ms (1)
+May 04 21:08:08 symfony [info] {sfWebResponse} Send content (1192 o)
+May 04 21:08:20 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:08:20 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:08:20 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:08:20 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:08:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:08:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:08:20 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:08:20 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:08:20 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:08:20 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:08:21 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:08:21 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:08:21 symfony [debug] {sfPropelLogger} Binding '9' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:21 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:08:21 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:08:21 symfony [info] {sfWebDebugLogger} Configuration 13.84 ms (9)
+May 04 21:08:21 symfony [info] {sfWebDebugLogger} Action "users/getStates" 101.30 ms (1)
+May 04 21:08:21 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 56.81 ms (1)
+May 04 21:08:21 symfony [info] {sfWebResponse} Send content (637 o)
+May 04 21:08:24 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:08:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:08:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:08:24 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:08:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:08:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:08:25 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:08:25 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:08:25 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:08:25 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:08:25 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:08:25 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:08:25 symfony [debug] {sfPropelLogger} Binding '13' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:25 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:08:25 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:08:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:08:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:08:25 symfony [info] {sfWebDebugLogger} Configuration 20.45 ms (9)
+May 04 21:08:25 symfony [info] {sfWebDebugLogger} Action "users/getStates" 60.36 ms (1)
+May 04 21:08:25 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 31.77 ms (1)
+May 04 21:08:25 symfony [info] {sfWebResponse} Send content (110 o)
+May 04 21:08:28 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:08:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:08:28 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:08:28 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:08:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:08:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:08:28 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:08:28 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:08:28 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:08:28 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:08:28 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:08:28 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:08:28 symfony [debug] {sfPropelLogger} Binding '20' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:08:28 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:08:28 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:08:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:08:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:08:28 symfony [info] {sfWebDebugLogger} Configuration 2.74 ms (9)
+May 04 21:08:28 symfony [info] {sfWebDebugLogger} Action "users/getStates" 47.76 ms (1)
+May 04 21:08:28 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 34.75 ms (1)
+May 04 21:08:28 symfony [info] {sfWebResponse} Send content (1006 o)
+May 04 21:16:27 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:16:27 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:16:27 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:16:27 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:16:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:16:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:16:27 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:16:27 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:16:27 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:16:27 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 21:16:27 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:16:27 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:16:27 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:16:27 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:16:27 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:16:27 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 21:16:27 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:16:28 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:16:28 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 21:16:28 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 21:16:28 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:16:28 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:16:28 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:16:28 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:16:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:16:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:16:28 symfony [info] {sfWebDebugLogger} Configuration 6.62 ms (10)
+May 04 21:16:28 symfony [info] {sfWebDebugLogger} Action "users/edit" 114.92 ms (1)
+May 04 21:16:28 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 125.59 ms (1)
+May 04 21:16:28 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 21:16:28 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.64 ms (1)
+May 04 21:16:28 symfony [info] {sfWebResponse} Send content (42799 o)
+May 04 21:16:31 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:16:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:16:31 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:16:31 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:16:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:16:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:16:31 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:16:31 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:16:31 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:16:31 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:16:31 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:16:31 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:16:31 symfony [debug] {sfPropelLogger} Binding '9' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:16:31 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:16:31 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:17:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:17:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:17:21 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:17:21 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:17:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 04 21:17:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:17:21 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:17:21 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:17:21 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:17:21 symfony [info] {usersActions} Call "usersActions->executeEdit()"
+May 04 21:17:21 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:17:21 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 04 21:17:21 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:21 symfony [debug] {sfPropelLogger} prepare: SELECT user_profile.USER_ID, user_profile.BIRTHDATE, user_profile.COUNTRY, user_profile.STATE, user_profile.CITY, user_profile.ZIP, user_profile.MILES, user_profile.WEIGHT, user_profile.HEIGHT FROM `user_profile` WHERE user_profile.USER_ID=:p1
+May 04 21:17:21 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:21 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1 LIMIT 1
+May 04 21:17:21 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:21 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:17:21 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/editSuccess.php"
+May 04 21:17:21 symfony [debug] {sfPropelLogger} prepare: SELECT cp_countries.ID, cp_countries.CODE, cp_countries.NAME FROM `cp_countries` ORDER BY cp_countries.NAME ASC
+May 04 21:17:21 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:17:21 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 04 21:17:21 symfony [info] {main} Call "sidebar->executeDefault()"
+May 04 21:17:21 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 04 21:17:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:17:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:17:21 symfony [info] {sfWebDebugLogger} Configuration 2.76 ms (10)
+May 04 21:17:21 symfony [info] {sfWebDebugLogger} Action "users/edit" 141.17 ms (1)
+May 04 21:17:21 symfony [info] {sfWebDebugLogger} View "Success" for "users/edit" 139.23 ms (1)
+May 04 21:17:21 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.02 ms (1)
+May 04 21:17:21 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 2.78 ms (1)
+May 04 21:17:21 symfony [info] {sfWebResponse} Send content (42799 o)
+May 04 21:17:24 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:17:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:17:24 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:17:24 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:17:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:17:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:17:24 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:17:24 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:17:24 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:17:24 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:17:24 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:17:24 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:17:24 symfony [debug] {sfPropelLogger} Binding '4' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:24 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:17:24 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:17:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:17:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:17:24 symfony [info] {sfWebDebugLogger} Configuration 6.09 ms (9)
+May 04 21:17:24 symfony [info] {sfWebDebugLogger} Action "users/getStates" 34.99 ms (1)
+May 04 21:17:24 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 33.04 ms (1)
+May 04 21:17:24 symfony [info] {sfWebResponse} Send content (594 o)
+May 04 21:17:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:17:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:17:26 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:17:26 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:17:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getCities with parameters array (  'module' => 'users',  'action' => 'getCities',)
+May 04 21:17:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:17:26 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:17:26 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:17:26 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:17:26 symfony [info] {usersActions} Call "usersActions->executeGetCities()"
+May 04 21:17:26 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:17:26 symfony [debug] {sfPropelLogger} prepare: SELECT cp_cities.ID, cp_cities.STATE_ID, cp_cities.NAME, cp_cities.LATITUDE, cp_cities.LONGITUDE FROM `cp_cities` WHERE cp_cities.STATE_ID=:p1 ORDER BY cp_cities.NAME ASC
+May 04 21:17:26 symfony [debug] {sfPropelLogger} Binding '52' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:26 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:17:26 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getCitiesSuccess.php"
+May 04 21:17:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:17:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:17:27 symfony [info] {sfWebDebugLogger} Configuration 12.59 ms (9)
+May 04 21:17:27 symfony [info] {sfWebDebugLogger} Action "users/getCities" 82.77 ms (1)
+May 04 21:17:27 symfony [info] {sfWebDebugLogger} View "Success" for "users/getCities" 34.93 ms (1)
+May 04 21:17:27 symfony [info] {sfWebResponse} Send content (1603 o)
+May 04 21:17:35 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:17:35 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:17:35 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:17:35 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:17:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:17:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:17:35 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:17:35 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:17:35 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:17:35 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:17:35 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:17:35 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:17:35 symfony [debug] {sfPropelLogger} Binding '215' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:35 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:17:35 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:17:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:17:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:17:35 symfony [info] {sfWebDebugLogger} Configuration 4.02 ms (9)
+May 04 21:17:35 symfony [info] {sfWebDebugLogger} Action "users/getStates" 140.82 ms (1)
+May 04 21:17:35 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 110.45 ms (1)
+May 04 21:17:35 symfony [info] {sfWebResponse} Send content (2324 o)
+May 04 21:17:41 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:17:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:17:41 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:17:41 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:17:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getCities with parameters array (  'module' => 'users',  'action' => 'getCities',)
+May 04 21:17:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:17:41 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:17:41 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:17:41 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:17:41 symfony [info] {usersActions} Call "usersActions->executeGetCities()"
+May 04 21:17:41 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:17:41 symfony [debug] {sfPropelLogger} prepare: SELECT cp_cities.ID, cp_cities.STATE_ID, cp_cities.NAME, cp_cities.LATITUDE, cp_cities.LONGITUDE FROM `cp_cities` WHERE cp_cities.STATE_ID=:p1 ORDER BY cp_cities.NAME ASC
+May 04 21:17:41 symfony [debug] {sfPropelLogger} Binding '3634' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:17:41 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:17:41 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getCitiesSuccess.php"
+May 04 21:17:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:17:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:17:41 symfony [info] {sfWebDebugLogger} Configuration 3.99 ms (9)
+May 04 21:17:41 symfony [info] {sfWebDebugLogger} Action "users/getCities" 393.23 ms (1)
+May 04 21:17:41 symfony [info] {sfWebDebugLogger} View "Success" for "users/getCities" 201.11 ms (1)
+May 04 21:17:41 symfony [info] {sfWebResponse} Send content (93740 o)
+May 04 21:18:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:18:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:18:08 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:18:08 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:18:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getStates with parameters array (  'module' => 'users',  'action' => 'getStates',)
+May 04 21:18:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:18:08 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:18:08 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:18:08 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:18:08 symfony [info] {usersActions} Call "usersActions->executeGetStates()"
+May 04 21:18:08 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:18:08 symfony [debug] {sfPropelLogger} prepare: SELECT cp_states.ID, cp_states.COUNTRY_ID, cp_states.NAME FROM `cp_states` WHERE cp_states.COUNTRY_ID=:p1 ORDER BY cp_states.NAME ASC
+May 04 21:18:08 symfony [debug] {sfPropelLogger} Binding '203' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:18:08 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:18:08 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getStatesSuccess.php"
+May 04 21:18:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:18:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:18:08 symfony [info] {sfWebDebugLogger} Configuration 5.23 ms (9)
+May 04 21:18:08 symfony [info] {sfWebDebugLogger} Action "users/getStates" 91.03 ms (1)
+May 04 21:18:08 symfony [info] {sfWebDebugLogger} View "Success" for "users/getStates" 67.71 ms (1)
+May 04 21:18:08 symfony [info] {sfWebResponse} Send content (476 o)
+May 04 21:18:10 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 04 21:18:10 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 04 21:18:10 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 04 21:18:10 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 04 21:18:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/getCities with parameters array (  'module' => 'users',  'action' => 'getCities',)
+May 04 21:18:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 04 21:18:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 04 21:18:10 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 04 21:18:10 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 04 21:18:10 symfony [info] {usersActions} Call "usersActions->executeGetCities()"
+May 04 21:18:10 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 04 21:18:10 symfony [debug] {sfPropelLogger} prepare: SELECT cp_cities.ID, cp_cities.STATE_ID, cp_cities.NAME, cp_cities.LATITUDE, cp_cities.LONGITUDE FROM `cp_cities` WHERE cp_cities.STATE_ID=:p1 ORDER BY cp_cities.NAME ASC
+May 04 21:18:10 symfony [debug] {sfPropelLogger} Binding '3349' at position :p1 w/ PDO type PDO::PARAM_INT
+May 04 21:18:10 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 04 21:18:10 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/users/templates/getCitiesSuccess.php"
+May 04 21:18:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 04 21:18:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 04 21:18:11 symfony [info] {sfWebDebugLogger} Configuration 25.89 ms (9)
+May 04 21:18:11 symfony [info] {sfWebDebugLogger} Action "users/getCities" 271.85 ms (1)
+May 04 21:18:11 symfony [info] {sfWebDebugLogger} View "Success" for "users/getCities" 113.14 ms (1)
+May 04 21:18:11 symfony [info] {sfWebResponse} Send content (38263 o)
+May 05 08:47:42 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+May 05 08:47:42 symfony [info] {sfPatternRouting} Connect sfRoute "default_symfony" (/symfony/:action/*)
+May 05 08:47:42 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+May 05 08:47:42 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+May 05 08:47:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /users/edit with parameters array (  'module' => 'users',  'action' => 'edit',)
+May 05 08:47:42 symfony [info] {myUser} Automatic user logout due to timeout
+May 05 08:47:42 symfony [info] {myUser} User is not authenticated
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+May 05 08:47:42 symfony [info] {sfFilterChain} Executing filter "sfValidationExecutionFilter"
+May 05 08:47:42 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 05 08:47:43 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+May 05 08:47:43 symfony [debug] {sfPropelLogger} prepare: SELECT users.USERNAME, users.PASSWORD, users.FNAME, users.LNAME, users.EMAIL, users.USER_ID, users.SALT, users.ACTIVE, users.JOIN_DATE FROM `users` WHERE users.USER_ID=:p1
+May 05 08:47:43 symfony [debug] {sfPropelLogger} Binding 1 at position :p1 w/ PDO type PDO::PARAM_INT
+May 05 08:47:43 symfony [info] {sfPHPView} Set component "sidebar" (sidebar/default)
+May 05 08:47:43 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/main/templates/indexSuccess.php"
+May 05 08:47:43 symfony [info] {sfPHPView} Decorate content with "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 05 08:47:43 symfony [info] {sfPHPView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/templates/layout.php"
+May 05 08:47:44 symfony [info] {main} Call "sidebar->executeDefault()"
+May 05 08:47:44 symfony [info] {sfPartialView} Render "/home/brandon/Desktop/bike1.2/apps/frontend/modules/sidebar/templates/_default.php"
+May 05 08:47:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 05 08:47:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 05 08:47:44 symfony [info] {sfWebDebugLogger} Configuration 24.92 ms (13)
+May 05 08:47:44 symfony [info] {sfWebDebugLogger} Action "main/index" 546.09 ms (1)
+May 05 08:47:44 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 717.19 ms (1)
+May 05 08:47:44 symfony [info] {sfWebDebugLogger} Component "sidebar/default" 0.03 ms (1)
+May 05 08:47:44 symfony [info] {sfWebDebugLogger} Partial "sidebar/_default" 9.77 ms (1)
+May 05 08:47:44 symfony [info] {sfWebResponse} Send content (33494 o)

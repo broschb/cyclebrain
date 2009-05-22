@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Iterator.php
+END
+ConnectionBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/ConnectionBase.php
+END
+CacheFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/CacheFactory.php
+END
+ClassLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/ClassLoader.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Exception.php
+END
+FileException.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/FileException.php
+END
+Connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Connection.php
+END
+Cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Cache.php
+END
+Events.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events.php
+END
+Authenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Authenticator.php
+END
+BatchMailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/BatchMailer.php
+END
+RecipientList.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/RecipientList.php
+END
+ConnectionException.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/ConnectionException.php
+END
+File.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/File.php
+END
+Log.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Log.php
+END
+BadResponseException.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/BadResponseException.php
+END
+LogContainer.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/LogContainer.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Message.php
+END
+Address.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Address.php
+END
+AddressContainer.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/AddressContainer.php
+END

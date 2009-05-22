@@ -1,0 +1,114 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  cp_cities:
+    _attributes: { phpName: CpCities }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    state_id: { type: INTEGER, size: '11', required: true, foreignTable: cp_states, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    name: { type: VARCHAR, size: '100', required: true }
+    latitude: { type: DECIMAL, size: '18', scale: '14', required: false }
+    longitude: { type: DECIMAL, size: '18', scale: '14', required: false }
+    _indexes: { cp_cities_FI_1: [state_id] }
+  cp_countries:
+    _attributes: { phpName: CpCountries }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    code: { type: VARCHAR, size: '2', required: true }
+    name: { type: VARCHAR, size: '100', required: true }
+  cp_states:
+    _attributes: { phpName: CpStates }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    country_id: { type: INTEGER, size: '11', required: true, foreignTable: cp_countries, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    name: { type: VARCHAR, size: '100', required: true }
+    _indexes: { cp_states_FI_1: [country_id] }
+  equip_function:
+    _attributes: { phpName: EquipFunction }
+    function_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    function_name: { type: VARCHAR, size: '45', required: true }
+  rides:
+    _attributes: { phpName: Rides }
+    ride_key: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    ride_name: { type: VARCHAR, size: '45', required: true }
+  user_bikes:
+    _attributes: { phpName: UserBikes }
+    user_id: { type: INTEGER, size: '10', required: true, foreignTable: users, foreignReference: user_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    user_bike_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    bike_year: { type: INTEGER, size: '10', required: false }
+    bike_make: { type: VARCHAR, size: '45', required: false }
+    bike_model: { type: VARCHAR, size: '45', required: false }
+    equip_function: { type: INTEGER, size: '10', required: true }
+    description: { type: VARCHAR, size: '40', required: true }
+    _indexes: { FK_user_bikes_1: [user_id] }
+  user_equipement:
+    _attributes: { phpName: UserEquipement }
+    user_id: { type: INTEGER, size: '10', required: true, foreignTable: users, foreignReference: user_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    equipment_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    description: { type: VARCHAR, size: '45', required: true }
+    bike_id: { type: INTEGER, size: '10', required: false, foreignTable: user_bikes, foreignReference: user_bike_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    equip_function: { type: INTEGER, size: '10', required: true }
+    purchase_price: { type: DECIMAL, size: '10', scale: '2', required: true, defaultValue: '0.00' }
+    purchase_date: { type: DATE, required: false }
+    make: { type: VARCHAR, size: '50', required: false }
+    model: { type: VARCHAR, size: '50', required: false }
+    _indexes: { FK_user_equipement_1: [user_id], FK_user_equipement_2: [bike_id] }
+  user_information:
+    _attributes: { phpName: UserInformation }
+    user_id: { type: INTEGER, size: '10', primaryKey: true, required: true, defaultValue: '0', foreignTable: users, foreignReference: user_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    user_birthdate: { type: TIMESTAMP, required: true }
+    user_weight: { type: INTEGER, size: '10', required: true }
+    user_height: { type: INTEGER, size: '10', required: true }
+  user_profile:
+    _attributes: { phpName: UserProfile }
+    user_id: { type: INTEGER, size: '10', primaryKey: true, required: true, defaultValue: '0', foreignTable: users, foreignReference: user_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    birthdate: { type: TIMESTAMP, required: false }
+    country: { type: INTEGER, size: '11', required: false, foreignTable: cp_countries, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    state: { type: INTEGER, size: '11', required: false, foreignTable: cp_states, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    city: { type: INTEGER, size: '11', required: false, foreignTable: cp_cities, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    zip: { type: INTEGER, size: '11', required: false }
+    miles: { type: TINYINT, size: '1', required: true, defaultValue: '1' }
+    weight: { type: INTEGER, size: '11', required: false }
+    height: { type: INTEGER, size: '11', required: false }
+    _indexes: { countryFk: [country], stateFk: [state], cityFk: [city] }
+  user_ride_map:
+    _attributes: { phpName: UserRideMap }
+    user_ride_id: { type: INTEGER, size: '10', primaryKey: true, required: true, foreignTable: user_rides, foreignReference: user_ride_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    coord_order: { type: INTEGER, size: '11', primaryKey: true, required: true }
+    lat: { type: DECIMAL, size: '18', scale: '14', required: false }
+    long: { type: DECIMAL, size: '18', scale: '14', required: false }
+  user_rides:
+    _attributes: { phpName: UserRides }
+    user_ride_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    ride_id: { type: INTEGER, size: '10', required: true, foreignTable: rides, foreignReference: ride_key, onDelete: RESTRICT, onUpdate: RESTRICT }
+    user_id: { type: INTEGER, size: '10', required: true, foreignTable: users, foreignReference: user_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    description: { type: VARCHAR, size: '45', required: true }
+    mileage: { type: DECIMAL, size: '10', scale: '2', required: true, defaultValue: '0.00' }
+    altitude_gain: { type: DECIMAL, size: '10', scale: '2', required: true, defaultValue: '0.00' }
+    _indexes: { FK_user_rides_1: [ride_id], FK_user_rides_2: [user_id] }
+  user_stat_equip:
+    _attributes: { phpName: UserStatEquip }
+    user_stat_equip_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    user_stat_id: { type: INTEGER, size: '10', required: true, foreignTable: user_stats, foreignReference: stat_no, onDelete: RESTRICT, onUpdate: RESTRICT }
+    user_equip_id: { type: INTEGER, size: '10', required: true, foreignTable: user_equipement, foreignReference: equipment_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { FK_user_stat_equip_1: [user_stat_id], FK_user_stat_equip_2: [user_equip_id] }
+  user_stats:
+    _attributes: { phpName: UserStats }
+    user_id: { type: INTEGER, size: '10', required: true }
+    ride_date: { type: TIMESTAMP, required: true }
+    ride_time: { type: DECIMAL, size: '10', scale: '2', required: true, defaultValue: '0.00' }
+    avg_speed: { type: DECIMAL, size: '10', scale: '2', required: true, defaultValue: '0.00' }
+    calories_burned: { type: DECIMAL, size: '10', scale: '0', required: true, defaultValue: '0' }
+    stat_no: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    ride_key: { type: INTEGER, size: '10', required: true, foreignTable: user_rides, foreignReference: user_ride_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    bike_id: { type: INTEGER, size: '10', required: true, foreignTable: user_bikes, foreignReference: user_bike_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { FK_user_stats_1: [ride_key], FK_bike_id_constraint: [bike_id] }
+  users:
+    _attributes: { phpName: Users }
+    username: { type: VARCHAR, size: '15', required: true }
+    password: { type: VARCHAR, size: '40', required: true }
+    fname: { type: VARCHAR, size: '45', required: true }
+    lname: { type: VARCHAR, size: '45', required: true }
+    email: { type: VARCHAR, size: '45', required: true }
+    user_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    salt: { type: VARCHAR, size: '32', required: true }
+    active: { type: VARCHAR, size: '1', required: true, defaultValue: 'N' }
+    join_date: { type: TIMESTAMP, required: true }

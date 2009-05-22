@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>dwJpgraphPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>dwJpgraphPlugin is for dynamically generating graphs via Jpgraph2.</summary>
+ <description>dwJpgraphPlugin is for dynamically generating graphs via Jpgraph2.</description>
+ <lead>
+  <name>Dustin Whittle</name>
+  <user>dwhittle</user>
+  <email>dustin.whittle@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-05-22</date>
+ <time>14:44:02</time>
+ <version>
+  <release>1.0.2</release>
+  <api>1.0.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT License</license>
+ <notes>--</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <dir name="lib">
+    <dir name="jpgraph">
+     <dir name="lang">
+      <file name="de.inc.php" role="data" />
+      <file name="en.inc.php" role="data" />
+      <file name="prod.inc.php" role="data" />
+     </dir> <!-- /lib/jpgraph/lang -->
+     <file name="CHANGELOG" role="data" />
+     <file name="flags.dat" role="data" />
+     <file name="flags_thumb35x35.dat" role="data" />
+     <file name="flags_thumb60x60.dat" role="data" />
+     <file name="flags_thumb100x100.dat" role="data" />
+     <file name="gd_image.inc.php" role="data" />
+     <file name="imgdata_balls.inc.php" role="data" />
+     <file name="imgdata_bevels.inc.php" role="data" />
+     <file name="imgdata_diamonds.inc.php" role="data" />
+     <file name="imgdata_pushpins.inc.php" role="data" />
+     <file name="imgdata_squares.inc.php" role="data" />
+     <file name="imgdata_stars.inc.php" role="data" />
+     <file name="jpg-config.inc.php" role="data" />
+     <file name="jpgraph.php" role="data" />
+     <file name="jpgraph_antispam-digits.php" role="data" />
+     <file name="jpgraph_antispam.php" role="data" />
+     <file name="jpgraph_bar.php" role="data" />
+     <file name="jpgraph_canvas.php" role="data" />
+     <file name="jpgraph_canvtools.php" role="data" />
+     <file name="jpgraph_date.php" role="data" />
+     <file name="jpgraph_errhandler.inc.php" role="data" />
+     <file name="jpgraph_error.php" role="data" />
+     <file name="jpgraph_flags.php" role="data" />
+     <file name="jpgraph_gantt.php" role="data" />
+     <file name="jpgraph_gb2312.php" role="data" />
+     <file name="jpgraph_gradient.php" role="data" />
+     <file name="jpgraph_iconplot.php" role="data" />
+     <file name="jpgraph_imgtrans.php" role="data" />
+     <file name="jpgraph_led.php" role="data" />
+     <file name="jpgraph_line.php" role="data" />
+     <file name="jpgraph_log.php" role="data" />
+     <file name="jpgraph_mgraph.php" role="data" />
+     <file name="jpgraph_pie.php" role="data" />
+     <file name="jpgraph_pie3d.php" role="data" />
+     <file name="jpgraph_plotband.php" role="data" />
+     <file name="jpgraph_plotmark.inc.php" role="data" />
+     <file name="jpgraph_polar.php" role="data" />
+     <file name="jpgraph_radar.php" role="data" />
+     <file name="jpgraph_regstat.php" role="data" />
+     <file name="jpgraph_scatter.php" role="data" />
+     <file name="jpgraph_stock.php" role="data" />
+     <file name="jpgraph_ttf.inc.php" role="data" />
+     <file name="jpgraph_utils.inc.php" role="data" />
+     <file name="QPL.txt" role="data" />
+     <file name="README" role="data" />
+     <file name="VERSION" role="data" />
+    </dir> <!-- /lib/jpgraph -->
+    <file name="sfJpGraph.class.php" role="data" />
+   </dir> <!-- /lib -->
+   <dir name="modules">
+    <dir name="dwJpgraphPlugin">
+     <dir name="actions">
+      <file name="actions.class.php" role="data" />
+     </dir> <!-- /modules/dwJpgraphPlugin/actions -->
+    </dir> <!-- /modules/dwJpgraphPlugin -->
+   </dir> <!-- /modules -->
+   <dir name="test">
+    <file name="sfJpGraphTest.php" role="data" />
+   </dir> <!-- /test -->
+   <file name="LICENSE" role="data" />
+   <file name="README" role="data" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.1.0</min>
+    <max>1.2.0</max>
+    <exclude>1.2.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-05-22</date>
+   <license uri="http://www.symfony-project.com/license">MIT License</license>
+   <notes>--</notes>
+  </release>
+ </changelog>
+</package>

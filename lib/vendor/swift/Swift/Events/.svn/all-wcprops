@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events
+END
+ListenerMapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/ListenerMapper.php
+END
+ConnectEvent.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/ConnectEvent.php
+END
+DisconnectEvent.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/DisconnectEvent.php
+END
+SendEvent.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/SendEvent.php
+END
+ConnectListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/ConnectListener.php
+END
+DisconnectListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/DisconnectListener.php
+END
+SendListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/SendListener.php
+END
+CommandEvent.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/CommandEvent.php
+END
+ResponseEvent.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/ResponseEvent.php
+END
+BeforeSendListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/BeforeSendListener.php
+END
+CommandListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/CommandListener.php
+END
+ResponseListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/ResponseListener.php
+END
+Listener.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/Listener.php
+END
+BeforeCommandListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Events/BeforeCommandListener.php
+END

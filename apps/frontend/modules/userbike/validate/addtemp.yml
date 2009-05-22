@@ -1,0 +1,30 @@
+## YAML Template.
+methods:
+  post: [bike_year, bike_make, bike_model]
+
+names:
+  bike_year:
+    required:     true
+    required_msg: bike year required
+    validators:   yearLengthValidator, yearValidator
+
+  bike_make:
+    required:     true
+    required_msg: bike make required
+
+  bike_model:
+    required:     true
+    required_msg: bike model required
+
+yearLengthValidator:
+    class:        sfStringValidator
+    param:
+      min:        4
+      min_error:  year must be 4 characters
+      max:        4
+      max_error:  year must be 4 characters
+
+yearValidator:
+    class:        sfNumberValidator
+    param:
+

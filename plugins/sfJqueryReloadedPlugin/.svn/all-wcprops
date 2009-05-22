@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/12332/plugins/sfJqueryReloadedPlugin/1.2/trunk
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/12331/plugins/sfJqueryReloadedPlugin/1.2/trunk/LICENSE
+END
+package.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/12332/plugins/sfJqueryReloadedPlugin/1.2/trunk/package.xml
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/12331/plugins/sfJqueryReloadedPlugin/1.2/trunk/README
+END

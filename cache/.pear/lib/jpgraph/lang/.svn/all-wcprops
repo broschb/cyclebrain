@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/lang
+END
+en.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/lang/en.inc.php
+END
+prod.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/lang/prod.inc.php
+END
+de.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/9195/plugins/dwJpgraphPlugin/lib/jpgraph/lang/de.inc.php
+END

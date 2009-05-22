@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin
+END
+EasySwiftResponseTracker.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/EasySwiftResponseTracker.php
+END
+ConnectionRotator.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/ConnectionRotator.php
+END
+BandwidthMonitor.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/BandwidthMonitor.php
+END
+MailSend.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/MailSend.php
+END
+VerboseSending.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/VerboseSending.php
+END
+AntiFlood.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/AntiFlood.php
+END
+Decorator.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/Decorator.php
+END
+FileEmbedder.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/FileEmbedder.php
+END
+Throttler.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/swiftmailer/!svn/ver/723/tags/php5/3.3.3/lib/Swift/Plugin/Throttler.php
+END

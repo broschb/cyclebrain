@@ -1,0 +1,21 @@
+    # Be sure to only have this line once in your configuration
+    NameVirtualHost 127.0.0.1:80
+
+    # This is the configuration for bike
+    Listen 127.0.0.1:80
+
+    <VirtualHost 127.0.0.1:80>
+      ServerName bike.localhost
+      DocumentRoot "/home/brandon/programming/php/symfonyprojects/bike1.2/web"
+      DirectoryIndex index.php
+      <Directory "/home/brandon/programming/php/symfonyprojects/bike1.2/web">
+        AllowOverride All
+        Allow from All
+      </Directory>
+
+      Alias /sf "/home/brandon/programming/php/symfonyprojects/bike1.2/lib/vendor/symfony/data/web/sf"
+      <Directory "/home/brandon/programming/php/symfonyprojects/bike1.2/lib/vendor/symfony/data/web/sf">
+        AllowOverride All
+        Allow from All
+      </Directory>
+    </VirtualHost>
