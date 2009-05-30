@@ -480,19 +480,7 @@ public function executeLogout()
          $this->user->setLname($lname);
          $this->user->setEmail($email);
         
-  		//$data = $request->getParameter('user');
-        //$data = $this->getRequestParameter('user');
-  		//$profile->setCountry($data['country_id']);
-  		//$profile->setState($data['state_id']);
-  		//$profile->setCity($data['city_id']);
-
-  		// check validity
-     //   if(!$profile->getCity() || ($profile->getCpCities()->getStateId() != $profile->getState())) $profile->setCity(0);
-     //   if(!$profile->getState() || ($profile->getCpStates()->getCountryId() != $profile->getCountry())) $profile->setState(0);
-  	//	if(!$profile->getCountry()) $profile->setCountry(0);
          $this->user->setUserProfile($profile);
-  	//	$this->form = new UserProfileForm($profile);
-  	//	$this->form->bind($request->getParameter('user'));
   		
                  $this->user->save();
                 $profile->save();
