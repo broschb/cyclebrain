@@ -432,6 +432,12 @@ public function executeLogout()
         $height = $this->getRequestParameter('height');
         $zip = $this->getRequestParameter('zip');
         $units = $this->getRequestParameter('units');
+        $country = $this->getRequestParameter('country');
+        $city = $this->getRequestParameter('city');
+        $state = $this->getRequestParameter('state');
+
+//        sfContext::getInstance()->getLogger()->info($message);
+
         //make sure have profile
         if(!$this->user->getUserProfile()){
              $profile = UserProfilePeer::retrieveByPK($user->getUserId());
@@ -453,6 +459,9 @@ public function executeLogout()
         $profile->setWeight($weight);
         $profile->setHeight($height);
         $profile->setZip($zip);
+        $profile->setCountry($country);
+        $profile->setState($state);
+        $profile->setCity($city);
        
         if($units && count($units)>0){
             $u=$units[0];
@@ -495,7 +504,14 @@ public function executeLogout()
   }
 
 public function executeGetStates(){
-    $countryId = $this->getRequestParameter('id');
+    $countryId = $this->getRequestParameter('country');
+    $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+    $profile = UserProfilePeer::retrieveByPK($userId);
+    if($profile && $profile->getState()){
+        $this->currentState = $profile->getState();
+    }else{
+        $this->currentState = -1;
+    }
     if($countryId){
         $this->states = CpStatesPeer::getAllStatesByCountry($countryId);
     }else{
@@ -504,7 +520,14 @@ public function executeGetStates(){
 }
 
 public function executeGetCities(){
-    $stateId = $this->getRequestParameter('id');
+    $stateId = $this->getRequestParameter('state');
+     $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+    $profile = UserProfilePeer::retrieveByPK($userId);
+    if($profile && $profile->getCity()){
+        $this->currentCity = $profile->getCity();
+    }else{
+        $this->currentCity = -1;
+    }
     if($stateId){
         $this->cities = CpCitiesPeer::getAllCitiesByState($stateId);
     }else{

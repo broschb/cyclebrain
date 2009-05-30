@@ -1,9 +1,10 @@
 <?php
 use_helper('Object');
 ?>
-<div id="citySelection">
+<span id="citySelection">
+<label for="title">City:</label>
 <?php
-echo select_tag( 'cities',  objects_for_select($cities, 'getId',
-'getName') );
+echo select_tag( 'city',  objects_for_select($cities, 'getId',
+'getName',$currentCity) );
 ?>
-</div>
+</span>

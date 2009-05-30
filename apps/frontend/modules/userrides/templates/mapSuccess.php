@@ -22,7 +22,9 @@ function initialize()
 {
 if (GBrowserIsCompatible()) {
         map = new GMap2(document.getElementById("map"));
-        map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+        var lat = document.getElementById("lat").value;
+        var lon = document.getElementById("long").value;
+        map.setCenter(new GLatLng(lat, lon), 13);
         map.setUIToDefault();
         map.disableDoubleClickZoom();
         map.enableContinuousZoom();
@@ -236,6 +238,8 @@ showDiv("control");
        <?php echo input_hidden_tag('coords',$coords) ?>
        <?php echo input_hidden_tag('mileagePref',$mileagePref) ?>
        <?php echo input_hidden_tag('totalMileage',$totalMileage) ?>
+        <?php echo input_hidden_tag('lat',$lat) ?>
+       <?php echo input_hidden_tag('long',$long) ?>
 
        <div id="editcontrols" style="display:none">
            <?php echo button_to_function('Clear', "resetRoute()")."Clear all points on the map." ?>

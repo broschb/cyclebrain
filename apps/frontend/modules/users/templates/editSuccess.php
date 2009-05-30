@@ -4,6 +4,7 @@
 <?php echo form_tag('users/edit') ?>
 <script type="text/javascript">
     window.onload=function(){
+        document.getElementById('country').onchange();
         if(!NiftyCheck())
             return;
         Rounded("div.main","#FFF","#A9D467");
@@ -66,21 +67,19 @@
 
     <div class="form-row">
      <label for="title">Country:</label>
-     <?php echo select_tag('id',
-            objects_for_select(CpCountriesPeer::getAllCountries(), 'getId', 'getName',null),
+     <?php echo select_tag('country',
+            objects_for_select(CpCountriesPeer::getAllCountries(), 'getId', 'getName',$user->getUserProfile()->getCountry()),
             array('style' => 'width:150px',
    'onchange' => remote_function( array(
 'update' => 'stateSelection',
 'url' => 'users/getStates',
-'with' => "'id=' + this.value" ,
+'with' => "'country=' + this.value" ,
 'loading' => "Element.show('indicator')",
-'complete' => "Element.hide('indicator')"
+'complete' => "document.getElementById('state').onchange(),Element.hide('indicator')"
                     )    )
             )) ?>
-   <label for="title">State:</label>
-   <div id="stateSelection"></div>
-   <label for="title">City:</label>
-   <div id="citySelection"></div>
+   <span id="stateSelection"></span>
+   <span id="citySelection"></span>
    
     </div>
 

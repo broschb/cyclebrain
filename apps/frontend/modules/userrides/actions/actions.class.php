@@ -168,8 +168,19 @@ public function executeMap(){
      $this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
      $mapMileage = $this->getRequestParameter('mapMileage');
      $this->totalMileage=0;
+     //
      
     //get profile to get mileage preference
+     $this->lat=37.4419;
+     $this->long= -122.1419;
+    $profile = UserProfilePeer::retrieveByPK($userId);
+    if($profile){
+        $cpCity = $profile->getLatLong();
+        if($cpCity){
+            $this->lat=$cpCity->getLatitude();
+            $this->long=$cpCity->getLongitude();
+        }
+    }
     $this->rideId = $this->getRequestParameter('rideId');
     sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@rideId '.$this->rideId);
     $this->coords = null;
