@@ -168,6 +168,7 @@ public function executeMap(){
      $this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
      $mapMileage = $this->getRequestParameter('mapMileage');
      $this->totalMileage=0;
+     $this->elevationChart=null;
      //
      
     //get profile to get mileage preference
@@ -218,6 +219,7 @@ public function executeMap(){
                     $map->setCoordOrder($count++);
                     $map->setLat($latLng[0]);
                     $map->setLong($latLng[1]);
+                    $map->setElevation($this->lookupElevation($latLng[0], $latLng[1]));
                     sfContext::getInstance()->getLogger()->info('lat'.$latLng[0]);
                     sfContext::getInstance()->getLogger()->info('lng'.$latLng[1]);
                      $map->save();
@@ -237,7 +239,40 @@ public function executeMap(){
              }
          }
     }
+     $this->elevationChart=$this->createElevationGraph($userId,$this->rideId);
 }
+
+public function lookupElevation($lat,$long){
+    $wsdl="http://gisdata.usgs.gov/xmlwebservices2/elevation_service.asmx?WSDL";
+    $client=new soapclient($wsdl);
+  //  $param=array('X_Value'=>'-105.888977050781','Y_Value'=>'37.4722695947246');
+    $param=array('parameters' => array('X_Value'=>$long,'Y_Value'=>$lat));
+
+
+    $result = $client->__soapCall('getElevation', $param);
+    $xml = $result->getElevationResult->any;
+    $xmlobj = simplexml_load_string($xml);
+    $elevation = $xmlobj->Elevation_Query->Elevation;
+    sfContext::getInstance()->getLogger()->info('1@@@@@@@@@@@@@@@ELEVATION '.$elevation);
+    return $elevation;
+}
+
+private function createElevationGraph($userId,$userRideId){
+          $graph = new ezcGraphLineChart();
+      $graph->title = 'Elevation Graph';
+      $graphData = reportQueries::getElevationReportDate($userRideId);
+      // Add data
+        foreach ( $graphData as $cat => $data )
+      {
+          $graph->data[$cat] = new ezcGraphArrayDataSet( $data );
+      }
+      $graph->data['Average Elevation']->displayType = ezcGraph::LINE;
+      $graph->options->fillLines = 210;
+
+      $title='images/charts/Elevation_'.$userId.'.svg';
+      $graph->render( 700, 250, $title );
+      return $title;
+  }
 
   public function executeGetRideDetails($request){
        $this->forward404unless($request->isXmlHttpRequest());

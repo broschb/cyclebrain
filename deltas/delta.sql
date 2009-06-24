@@ -1,0 +1,1 @@
+ALTER TABLE `cycleBrainDev`.`user_ride_map` ADD COLUMN `elevation` DECIMAL(18,14)  DEFAULT NULL AFTER `long`;

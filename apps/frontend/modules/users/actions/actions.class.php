@@ -264,7 +264,7 @@ public function executeAuthenticate(){
   }
   }
 
-  public function sendPasswordMail($user, $email,$newPassword){
+  public function sendPasswordMail($user, $to,$newPassword){
       try
       {
           // Create the mailer and message objects
@@ -284,9 +284,9 @@ public function executeAuthenticate(){
           $mailer->send($message, $email, 'cyclebrain@gmail.com');
           $mailer->disconnect();*/
           $body = $user.' Your password has been reset.  Below is your new password, please reset
-your password after loggin in.\n '.$newPassword;
+your password after logging in. '.$newPassword;
            $email= new CycleBrainEmail();
-           $email->sendEmail($email, 'admin@cyclebrain.com', 'CycleBrain Password', $body);
+           $email->sendEmail($to, 'admin@cyclebrain.com', 'CycleBrain Password', $body);
       }
       catch (Exception $e)
       {
@@ -294,7 +294,7 @@ your password after loggin in.\n '.$newPassword;
       }
   }
 
-  public function sendMail($user, $link, $userId,$email){
+  public function sendMail($user, $link, $userId,$to){
       try
       {
           // Create the mailer and message objects
@@ -308,7 +308,7 @@ your password after loggin in.\n '.$newPassword;
           $email= new CycleBrainEmail();
           $subject = 'Welcome to Cyclebrain';
           $body = $userId.' Please follow the link below to activate your account\n'.$fullLink;
-          $email->sendEmail($email, 'admin@cyclebrain.com', $subject, $body);
+          $email->sendEmail($to, 'admin@cyclebrain.com', $subject, $body);
           // Render message parts
          /* $mailContext = array('name' => $user,'link' => $fullLink);
           $message->attach(new Swift_Message_Part($this->getPartial('users/mailHtmlBody', $mailContext), 'text/html'));

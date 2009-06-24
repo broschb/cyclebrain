@@ -1,3 +1,54 @@
+/*Calendar css*/
+table {
+  width:90%;
+  border-top:1px solid #e5eff8;
+  border-right:1px solid #e5eff8;
+  margin:1em auto;
+  border-collapse:collapse;
+  }
+
+td {
+  color:#678197;
+  border-bottom:1px solid #e5eff8;
+  border-left:1px solid #e5eff8;
+  padding:.1em 1em .3em .1em;
+  text-align:center;
+}
+
+tr.odd td {
+background:#f7fbff
+}
+tr.odd .column1 {
+background:#f4f9fe;
+}
+.column1 {
+background:#f9fcfe;
+}
+
+thead th {
+background:#f4f9fe;
+text-align:center;
+font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+color:#66a3d3;
+}
+
+#calDate{
+    text-align:left;
+    font-weight:bold;
+    height: 25px;
+    width: 85px;
+    overflow: hidden
+}
+
+#calInfo{
+    text-align:left;
+    height: 25px;
+    width: 85px;
+    overflow: hidden;
+    font-size:.6em;
+}
+/*End Calendar css*/
+
 #map{
     margin:10px 10px 10px 10px;
     width: 80% ;

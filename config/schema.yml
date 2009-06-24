@@ -75,6 +75,7 @@ propel:
     coord_order: { type: INTEGER, size: '11', primaryKey: true, required: true }
     lat: { type: DECIMAL, size: '18', scale: '14', required: false }
     long: { type: DECIMAL, size: '18', scale: '14', required: false }
+    elevation: { type: DECIMAL, size: '18', scale: '14', required: false }
   user_rides:
     _attributes: { phpName: UserRides }
     user_ride_id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }

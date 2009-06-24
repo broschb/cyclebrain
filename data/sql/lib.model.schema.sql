@@ -226,6 +226,7 @@ CREATE TABLE `user_ride_map`
 	`coord_order` INTEGER(11)  NOT NULL,
 	`lat` DECIMAL(18,14),
 	`long` DECIMAL(18,14),
+	`elevation` DECIMAL(18,14),
 	PRIMARY KEY (`user_ride_id`,`coord_order`),
 	CONSTRAINT `user_ride_map_FK_1`
 		FOREIGN KEY (`user_ride_id`)

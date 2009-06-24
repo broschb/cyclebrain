@@ -26,7 +26,12 @@
                 <label for="title">Email: <?php echo $u->getEmail() ?></label>
             </div>
             <div>
-                <input type="button" value="Change Password" onClick="Modalbox.show('users/changePassword', {title:' Change Password', width: 600});return false;"/>
+                <!--input type="button" value="Change Password" onClick="Modalbox.show('users/changePassword', {title:' Change Password', width: 600});return false;"/-->
+                <?php echo m_link_to('Change Password',
+      'users/changePassword',
+array('title' => 'Change Password'
+      ),
+array('width' => 400, 'height' => 180,'afterHide' => 'modalRefresh')) ?>
             </div>
 
         </div>

@@ -22,7 +22,7 @@ class mainActions extends sfActions
         if ($this->getRequest()->getMethod() == sfRequest::POST)
         {
             try{
-                $email=$this->getRequestParameter('email');
+                $newUser=$this->getRequestParameter('email');
                 $this->subscribe = 'Thanks, we will contact you shortly at the email address you have provided';
          /*$connection = new Swift_Connection_SMTP('smtp.gmail.com', 465, Swift_Connection_SMTP::ENC_SSL);
           $connection->setUsername('cyclebrain@gmail.com');
@@ -36,7 +36,7 @@ class mainActions extends sfActions
           $mailer->disconnect();
         */
               $email = new CycleBrainEmail();
-              $email->sendEmail('cyclebrain@gmail.com','admin@cyclebrain.com','BETA USER',$email);
+              $email->sendEmail('cyclebrain@gmail.com','admin@cyclebrain.com','BETA USER',$newUser);
             }catch (Exception $e) {
                 echo 'MainActions:Index Caught exception: ',  $e->getMessage(), "\n";
             }

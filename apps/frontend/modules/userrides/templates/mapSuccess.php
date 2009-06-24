@@ -229,6 +229,14 @@ showDiv("control");
      <?php echo $rideName." - " ?>
     <label id="dist" for="distance" style="text-align:right"></label>
     </div>
+
+    <div id="ElevationChart">
+<?php if ($elevationChart): ?>
+  <object data="<?php echo '/'.$elevationChart ?>" type="image/svg+xml">
+        You need a browser capeable of SVG to display this image.
+</object>
+<?php endif; ?>
+</div>
    
    <div id="map" style="width: 720px; height: 500px"></div>
 

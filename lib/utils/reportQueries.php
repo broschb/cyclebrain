@@ -250,4 +250,43 @@ class reportQueries{
         $mon = date("d-M",strtotime('+1 day',$minusonedate));
         return $mon;
     }
+
+     public static function getElevationReportDate($userRideId){
+        $datasetName='Elevation';
+       
+        $altArray = array();
+        $avg = array();
+        $connection = Propel::getConnection();
+        $query = "SELECT elevation FROM user_ride_map where user_ride_id=? order by coord_order";
+        sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@executing getElevationReportDate '.$query);
+        $statement = $connection->prepare($query);
+        $statement->bindValue(1, $userRideId);
+        $resultset = $statement->execute();
+        $count=0;
+        $total=0;
+        while ($row=$statement->fetch())
+        {
+//            TODO need to convert meters and feet
+            $altitude = $row['elevation'];
+            $altArray[$count]=$altitude;
+            $total=$total+$altitude;
+            $count++;
+        }
+        //go through and set avg
+        if($count>0){
+            $average=$total/$count;
+        }else{
+            $average=0;
+        }
+        foreach (array_keys($altArray) as $a){
+            $avg[$a]=$average;
+        }
+        if(count($altArray)==0){
+            $altArray[0]=0;
+            $avg[0]=0;
+        }
+        $return = array($datasetName=>$altArray,'Average Elevation'=>$avg);
+
+        return $return;
+    }
 }

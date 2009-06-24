@@ -51,6 +51,30 @@ expandCollapseLinkDiv = function(textToChange,toChange,url,param,paramvalue){
     }
 }
 
+fadeElement = function(toFade){
+   // Effect.Fade(toFade);
+    new Effect.Fade(toFade, {
+    queue: {
+        scope:      toFade,
+        position:   'end'
+    }
+
+});
+}
+
+appearElement = function(toFade){
+//if(document.getElementById(toFade).style.display == 'none'){
+   // Effect.Appear(toFade);
+     new Effect.Appear(toFade, {
+    queue: {
+        scope:      toFade,
+        position:   'end'
+    }
+});
+//}
+
+}
+
  function doClick(element){
         var parent = element.parentNode;
         for (var i = 0; i < parent.childNodes.length; i++) {
