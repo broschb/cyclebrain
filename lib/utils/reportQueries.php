@@ -259,6 +259,7 @@ class reportQueries{
         $connection = Propel::getConnection();
         $query = "SELECT elevation FROM user_ride_map where user_ride_id=? order by coord_order";
         sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@executing getElevationReportDate '.$query);
+        sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@executing getElevationReportDate Ride ID '.$userRideId);
         $statement = $connection->prepare($query);
         $statement->bindValue(1, $userRideId);
         $resultset = $statement->execute();

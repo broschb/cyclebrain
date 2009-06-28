@@ -72,7 +72,11 @@ require_once('class.soap_server.php');*/
 
 // class variable emulation
 // cf. http://www.webkreator.com/php/techniques/php-static-class-variables.html
-$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel = 9;
+  //$GLOBALS = new stdClass(); // instantiate $object explicitely
+ // $object->foo = 'bar'; // now it's save to do this!
+ //var_dump($GLOBALS);
+//$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel = 9;
+//$GLOBALS=array('_transient'=>array('static'=>array('nusoap_base'=>array(globalDebugLevel=>9))));
 
 /**
 *
@@ -224,7 +228,7 @@ class nusoap_base {
 	* @access	public
 	*/
 	function nusoap_base() {
-		$this->debugLevel = $GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel;
+		$this->debugLevel = 9;//$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel;
 	}
 
 	/**
@@ -234,7 +238,7 @@ class nusoap_base {
 	* @access	public
 	*/
 	function getGlobalDebugLevel() {
-		return $GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel;
+		return 9;//$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel;
 	}
 
 	/**
@@ -244,7 +248,7 @@ class nusoap_base {
 	* @access	public
 	*/
 	function setGlobalDebugLevel($level) {
-		$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel = $level;
+		//$GLOBALS['_transient']['static']['nusoap_base']->globalDebugLevel = $level;
 	}
 
 	/**
@@ -7378,7 +7382,9 @@ class nusoap_client extends nusoap_base  {
 	 */
 	function loadWSDL() {
 		$this->debug('instantiating wsdl class with doc: '.$this->wsdlFile);
-		$this->wsdl =& new wsdl('',$this->proxyhost,$this->proxyport,$this->proxyusername,$this->proxypassword,$this->timeout,$this->response_timeout,$this->curl_options,$this->use_curl);
+		$this->wsdl = new wsdl('',$this->proxyhost,$this->proxyport,$this->proxyusername,$this->proxypassword,$this->timeout,$this->response_timeout,$this->curl_options,$this->use_curl);
+		//BB CHanges
+		//$this->wsdl =& new wsdl('',$this->proxyhost,$this->proxyport,$this->proxyusername,$this->proxypassword,$this->timeout,$this->response_timeout,$this->curl_options,$this->use_curl);
 		$this->wsdl->setCredentials($this->username, $this->password, $this->authtype, $this->certRequest);
 		$this->wsdl->fetchWSDL($this->wsdlFile);
 		$this->checkWSDL();

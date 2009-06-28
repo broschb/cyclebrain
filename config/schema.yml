@@ -101,6 +101,7 @@ propel:
     stat_no: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
     ride_key: { type: INTEGER, size: '10', required: true, foreignTable: user_rides, foreignReference: user_ride_id, onDelete: RESTRICT, onUpdate: RESTRICT }
     bike_id: { type: INTEGER, size: '10', required: true, foreignTable: user_bikes, foreignReference: user_bike_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    mileage: { type: DECIMAL, size: '10', scale: '2', required: false }
     _indexes: { FK_user_stats_1: [ride_key], FK_bike_id_constraint: [bike_id] }
   users:
     _attributes: { phpName: Users }

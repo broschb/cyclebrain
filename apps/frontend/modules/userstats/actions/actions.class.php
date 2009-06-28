@@ -234,13 +234,16 @@ class userstatsActions extends sfActions
     {
          if($userId)
          {
+         	$rideId = $this->getRequestParameter('user_ride_id');
+         	$ride = UserRidesPeer::retrieveByPK($rideId);
              $this->userStat->setRideDate(join("/",$this->getRequestParameter('ride_date')));
              $this->userStat->setBikeId($this->getRequestParameter('user_bike_id'));
-             $this->userStat->setRideKey($this->getRequestParameter('user_ride_id'));
+             $this->userStat->setRideKey($rideId);
              $this->userStat->setRideTime($this->getRequestParameter('ride_time'));
              $this->userStat->setAvgSpeed($this->getRequestParameter('avg_speed'));
              $this->userStat->setCaloriesBurned($this->getRequestParameter('cal_burned'));
              $this->userStat->setUserId($userId);
+             $this->userStat->setMileage($ride->getMileage());
 
              $this->userStat->save();
 

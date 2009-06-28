@@ -23,7 +23,7 @@
             $divName='userrides'.$divCount;
              $treeName='tree'.$divCount;
             ?>
-        <input type="image" src="/images/closed2.png" id=<?php echo $treeName ?> onclick="expandCollapseDiv(<?php echo "'".$treeName."'" ?>,<?php echo "'".$divName."'" ?>,'<?=url_for('userrides/getRideDetails') ?>',<?php echo $user_route->getUserRideId() ?>); return false;">
+        <input type="image" src="/images/closed2.png" id=<?php echo $treeName ?> onclick="expandCollapseDiv(<?php echo "'".$treeName."'" ?>,<?php echo "'".$divName."'" ?>,'<?php echo url_for('userrides/getRideDetails') ?>',<?php echo $user_route->getUserRideId() ?>); return false;">
                <?php
                 echo $user_route->getDescription();
                 $editUrl = "Modalbox.show('userrides/edit?rideid=".$user_route->getUserRideId()."', {title:' Edit Route', width: 600});return false;";

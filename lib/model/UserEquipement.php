@@ -7,14 +7,14 @@ class UserEquipement extends BaseUserEquipement
     public static function getEquipmentMileage($userId,$bikeId){
          $c = new Criteria();
         $c->clearSelectColumns();
-        $c->addSelectColumn('SUM('.UserRidesPeer::MILEAGE.')');
+        $c->addSelectColumn('SUM('.UserStatsPeer::MILEAGE.')');
         $c->addSelectColumn(UserEquipementPeer::EQUIPMENT_ID);
         //$c->addGroupByColumn(UserRidesPeer::MILEAGE);
         $c->add(UserEquipementPeer::USER_ID,$userId);
         $c->add(UserEquipementPeer::BIKE_ID,$bikeId);
         $c->addJoin(UserEquipementPeer::EQUIPMENT_ID,UserStatEquipPeer::USER_EQUIP_ID,Criteria::INNER_JOIN);
         $c->addJoin(UserStatEquipPeer::USER_STAT_ID,UserStatsPeer::STAT_NO, Criteria::INNER_JOIN);
-        $c->addJoin(UserStatsPeer::RIDE_KEY,UserRidesPeer::USER_RIDE_ID, Criteria::INNER_JOIN);
+        //$c->addJoin(UserStatsPeer::RIDE_KEY,UserRidesPeer::USER_RIDE_ID, Criteria::INNER_JOIN);
         $c->addGroupByColumn(UserEquipementPeer::EQUIPMENT_ID);
         $stmt = UserStatsPeer::doSelectStmt($c);
 

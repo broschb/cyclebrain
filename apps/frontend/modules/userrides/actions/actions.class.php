@@ -14,274 +14,306 @@
  */
 class userridesActions extends sfActions
 {
- public function executeIndex(sfWebRequest $request)
-  {
-    $u_id =  sfContext::getInstance()->getUser()->getAttribute('subscriber_id', '-1', 'subscriber');
-    if($u_id){
-        $c = new Criteria();
-        $c->add(UserRidesPeer::USER_ID, $u_id);
-        $this->user_rides = UserRidesPeer::doSelect($c);
-    }else{
-        $this->user_rides = array('No Rides');
-    }
-  }
+	public function executeIndex(sfWebRequest $request)
+	{
+		$u_id =  sfContext::getInstance()->getUser()->getAttribute('subscriber_id', '-1', 'subscriber');
+		if($u_id){
+			$c = new Criteria();
+			$c->add(UserRidesPeer::USER_ID, $u_id);
+			$this->user_rides = UserRidesPeer::doSelect($c);
+		}else{
+			$this->user_rides = array('No Rides');
+		}
+	}
 
-  public function executeAdd()
-  {
-      $this->userRide = new UserRides();
-      $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
-       if ($this->getRequest()->getMethod() == sfRequest::POST)
-    {
-         if($userId)
-         {
-             $this->userRide->setDescription($this->getRequestParameter('route_desc'));
-             $this->userRide->setMileage(utils::getMetersFromMileage($this->getRequestParameter('distance')));
-             $this->userRide->setUserId($userId);
-             $this->userRide->setRideId(1);
+	public function executeAdd()
+	{
+		$this->userRide = new UserRides();
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+		if ($this->getRequest()->getMethod() == sfRequest::POST)
+		{
+			if($userId)
+			{
+				$this->userRide->setDescription($this->getRequestParameter('route_desc'));
+				$this->userRide->setMileage(utils::getMetersFromMileage($this->getRequestParameter('distance')));
+				$this->userRide->setUserId($userId);
+				$this->userRide->setRideId(1);
 
-             $this->userRide->save();
-              $this->rideName="";
-             //need to see if the user wants to create the map for this ride
-             if ($this->getRequestParameter('AddCreateMap') || $this->getRequestParameter('AddEditMap'))
-             {
-                  //set up necessary parameters
-                  $this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
-                  $this->totalMileage=0;
-                  //get profile to get mileage preference
-                  $this->rideId = $this->userRide->getUserRideId();
-                  sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@rideId '.$this->rideId);
-                  $this->coords = null;
-                  $ride = UserRidesPeer::retrieveByPK($this->rideId);
-                  $mapPoints=null;
+				$this->userRide->save();
+				$this->rideName="";
+				//need to see if the user wants to create the map for this ride
+				if ($this->getRequestParameter('AddCreateMap') || $this->getRequestParameter('AddEditMap'))
+				{
+					//set up necessary parameters
+					$this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
+					$this->totalMileage=0;
+					//get profile to get mileage preference
+					$this->rideId = $this->userRide->getUserRideId();
+					sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@rideId '.$this->rideId);
+					$this->coords = null;
+					$ride = UserRidesPeer::retrieveByPK($this->rideId);
+					$mapPoints=null;
 
-                  if($ride){
-                      $this->rideName=$ride->getDescription();
-                      //see if there are any coords
-                      $c = new Criteria();
-                      $c->add(UserRideMapPeer::USER_RIDE_ID,$this->rideId);
-                      $mapPoints = UserRideMapPeer::doSelect($c);
-                      $this->coords=UserRideMap::createMapString($mapPoints);
-                  }
-                  return $this->redirect('userrides/map?rideId='.$this->rideId);
-              }else{
-                 return $this->redirect('userrides/index');
-              }
-         }
+					if($ride){
+						$this->rideName=$ride->getDescription();
+						//see if there are any coords
+						$c = new Criteria();
+						$c->add(UserRideMapPeer::USER_RIDE_ID,$this->rideId);
+						$mapPoints = UserRideMapPeer::doSelect($c);
+						$this->coords=UserRideMap::createMapString($mapPoints);
+					}
+					return $this->redirect('userrides/map?rideId='.$this->rideId);
+				}else{
+					return $this->redirect('userrides/index');
+				}
+			}
 
-    }
+		}
 
-   return sfView::SUCCESS;
-  }
+		return sfView::SUCCESS;
+	}
 
-  public function executeEdit(){
- $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
- $rideId = $this->getRequestParameter('rideid');
-      sfContext::getInstance()->getLogger()->info('########@@@@@@@@@@@@@@@rideId '.$this->getRequestParameter('rideid'));
-      $this->rideName="";
-      $r=UserRidesPeer::retrieveByPK($rideId);
-      $this->rideid = $r->getUserRideId();
-      $this->userRide=$r;
-      $this->description=$r->getDescription();
-      $this->mileage=utils::getMileageFromMeters($r->getMileage());
-      $this->altitude=$r->getAltitudeGain();
-
-
-       if ($this->getRequest()->getMethod() == sfRequest::POST)
-    {
-        if($this->rideid){
-            $this->userRide->setDescription($this->getRequestParameter('route_desc'));
-             $this->userRide->setMileage(utils::getMetersFromMileage($this->getRequestParameter('distance')));
-             $this->userRide->setUserId($userId);
-             $this->userRide->setRideId(1);
-
-             $this->userRide->save();
-             if ($this->getRequestParameter('AddCreateMap') || $this->getRequestParameter('AddEditMap'))
-             {
-                  //set up necessary parameters
-                  $this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
-                  $this->totalMileage=0;
-                  //get profile to get mileage preference
-                  $this->rideId = $r->getUserRideId();
-                  sfContext::getInstance()->getLogger()->info('^^^^^@@@@@@@@@@@@@@@rideId '.$r->getUserRideId());
-                  $this->coords = null;
-                  $ride = UserRidesPeer::retrieveByPK($r->getUserRideId());
-                  $mapPoints=null;
-                  if($ride){
-                      $this->rideName=$ride->getDescription();
-                      //see if there are any coords
-                      $c = new Criteria();
-                      $c->add(UserRideMapPeer::USER_RIDE_ID,$r->getUserRideId());
-                      $mapPoints = UserRideMapPeer::doSelect($c);
-                      $this->coords=UserRideMap::createMapString($mapPoints);
-                  }
-                   sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@REDIRECT '.'userrides/map?rideId='.$r->getUserRideId());
-                  return $this->redirect('userrides/map?rideId='.$r->getUserRideId());
-              }else{
-                 return $this->redirect('userrides/index');
-              }
-        }
-    }
-  }
-
-  public function executeDelete(){
-      $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
-      $rId= $this->getRequestParameter('rideid');
-       $this->rideid=$rId;
-     sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@Deleeting ride '.$this->rideid);
-       if ($this->getRequest()->getMethod() == sfRequest::POST)
-    {
-        //delete user maps
-        $c = new Criteria();
-        $c->add(UserRideMapPeer::USER_RIDE_ID,$rId);
-        $mapPoints = UserRideMapPeer::doSelect($c);
-        if($mapPoints){
-            foreach ($mapPoints as $p){
-                $p->delete();
-            }
-        }
-        //delete user_stat and equipment
-        $c = new Criteria();
-         $c->add(UserStatsPeer::USER_ID,$userId);
-         $c->add(UserStatsPeer::RIDE_KEY,$rId);
-         $s=UserStatsPeer::doSelectJoinAll($c);
-         foreach($s as $stat){
-             foreach($stat->getUserStatEquips() as $equip){
-                 $equip->delete();
-             }
-            $stat->delete();
-        }
-
-        //now delete userride
-         $c = new Criteria();
-         $c->add(UserRidesPeer::USER_ID,$userId);
-         $c->add(UserRidesPeer::USER_RIDE_ID,$rId);
-         $rides = UserRidesPeer::doSelect($c);
-         foreach($rides as $r){
-             $r->delete();
-         }
-        return $this->redirect('userrides/index');
-    }
-  }
-
-public function executeMap(){
-     $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
-     $this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
-     $mapMileage = $this->getRequestParameter('mapMileage');
-     $this->totalMileage=0;
-     $this->elevationChart=null;
-     //
-     
-    //get profile to get mileage preference
-     $this->lat=37.4419;
-     $this->long= -122.1419;
-    $profile = UserProfilePeer::retrieveByPK($userId);
-    if($profile){
-        $cpCity = $profile->getLatLong();
-        if($cpCity){
-            $this->lat=$cpCity->getLatitude();
-            $this->long=$cpCity->getLongitude();
-        }
-    }
-    $this->rideId = $this->getRequestParameter('rideId');
-    sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@rideId '.$this->rideId);
-    $this->coords = null;
-    $ride = UserRidesPeer::retrieveByPK($this->rideId);
-    $mapPoints=null;
-    $this->rideName="";
-    if($ride){
-        $this->rideName=$ride->getDescription();
-        //see if there are any coords
-        $c = new Criteria();
-        $c->add(UserRideMapPeer::USER_RIDE_ID,$this->rideId);
-        $mapPoints = UserRideMapPeer::doSelect($c);
-        $this->coords=UserRideMap::createMapString($mapPoints);
-    }
-
-       if ($this->getRequest()->getMethod() == sfRequest::POST && $ride)
-       {
-           //need to see if we have existing route, if so then we will just delete and recreate
-           if($mapPoints){
-               foreach($mapPoints as $mp){
-                   $mp->delete();
-               }
-           }
-        $coordinates = $this->getRequestParameter('coords');
-        sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@coords '.$coordinates);
-        if($coordinates){
-            $coordArray = explode('*', $coordinates);
-            $count = 0;
-            $mapPoints=array ();
-            foreach ($coordArray as $c){
-                $latLng = explode(',', $c);
-                if($latLng && count($latLng)==2){
-                    $map = new UserRideMap();
-                    $map->setUserRideId($this->rideId);
-                    $map->setCoordOrder($count++);
-                    $map->setLat($latLng[0]);
-                    $map->setLong($latLng[1]);
-                    $map->setElevation($this->lookupElevation($latLng[0], $latLng[1]));
-                    sfContext::getInstance()->getLogger()->info('lat'.$latLng[0]);
-                    sfContext::getInstance()->getLogger()->info('lng'.$latLng[1]);
-                     $map->save();
-                     array_push($mapPoints, $map);
-                }
-            }
-        }
-         $this->coords=UserRideMap::createMapString($mapPoints);
-
-         //need to save new mileage if overriden
-         if($mapMileage && $mapMileage==1){
-             $meterMile = $this->getRequestParameter('totalMileage');
-             if($meterMile){
-                sfContext::getInstance()->getLogger()->info('Overriding Map Mileage with'.$mapMileage);
-                $ride->setMileage($meterMile);
-                $ride->save();
-             }
-         }
-    }
-     $this->elevationChart=$this->createElevationGraph($userId,$this->rideId);
-}
-
-public function lookupElevation($lat,$long){
-    $wsdl="http://gisdata.usgs.gov/xmlwebservices2/elevation_service.asmx?WSDL";
-    $client=new soapclient($wsdl);
-  //  $param=array('X_Value'=>'-105.888977050781','Y_Value'=>'37.4722695947246');
-    $param=array('parameters' => array('X_Value'=>$long,'Y_Value'=>$lat));
+	public function executeEdit(){
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+		$rideId = $this->getRequestParameter('rideid');
+		sfContext::getInstance()->getLogger()->info('########@@@@@@@@@@@@@@@rideId '.$this->getRequestParameter('rideid'));
+		$this->rideName="";
+		$r=UserRidesPeer::retrieveByPK($rideId);
+		$this->rideid = $r->getUserRideId();
+		$this->userRide=$r;
+		$this->description=$r->getDescription();
+		$this->mileage=utils::getMileageFromMeters($r->getMileage());
+		$this->altitude=$r->getAltitudeGain();
 
 
-    $result = $client->__soapCall('getElevation', $param);
-    $xml = $result->getElevationResult->any;
-    $xmlobj = simplexml_load_string($xml);
-    $elevation = $xmlobj->Elevation_Query->Elevation;
-    sfContext::getInstance()->getLogger()->info('1@@@@@@@@@@@@@@@ELEVATION '.$elevation);
-    return $elevation;
-}
+		if ($this->getRequest()->getMethod() == sfRequest::POST)
+		{
+			if($this->rideid){
+				$this->userRide->setDescription($this->getRequestParameter('route_desc'));
+				$this->userRide->setMileage(utils::getMetersFromMileage($this->getRequestParameter('distance')));
+				$this->userRide->setUserId($userId);
+				$this->userRide->setRideId(1);
 
-private function createElevationGraph($userId,$userRideId){
-          $graph = new ezcGraphLineChart();
-      $graph->title = 'Elevation Graph';
-      $graphData = reportQueries::getElevationReportDate($userRideId);
-      // Add data
-        foreach ( $graphData as $cat => $data )
-      {
-          $graph->data[$cat] = new ezcGraphArrayDataSet( $data );
-      }
-      $graph->data['Average Elevation']->displayType = ezcGraph::LINE;
-      $graph->options->fillLines = 210;
+				$this->userRide->save();
+				if ($this->getRequestParameter('AddCreateMap') || $this->getRequestParameter('AddEditMap'))
+				{
+					//set up necessary parameters
+					$this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
+					$this->totalMileage=0;
+					//get profile to get mileage preference
+					$this->rideId = $r->getUserRideId();
+					sfContext::getInstance()->getLogger()->info('^^^^^@@@@@@@@@@@@@@@rideId '.$r->getUserRideId());
+					$this->coords = null;
+					$ride = UserRidesPeer::retrieveByPK($r->getUserRideId());
+					$mapPoints=null;
+					if($ride){
+						$this->rideName=$ride->getDescription();
+						//see if there are any coords
+						$c = new Criteria();
+						$c->add(UserRideMapPeer::USER_RIDE_ID,$r->getUserRideId());
+						$mapPoints = UserRideMapPeer::doSelect($c);
+						$this->coords=UserRideMap::createMapString($mapPoints);
+					}
+					sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@REDIRECT '.'userrides/map?rideId='.$r->getUserRideId());
+					return $this->redirect('userrides/map?rideId='.$r->getUserRideId());
+				}else{
+					return $this->redirect('userrides/index');
+				}
+			}
+		}
+	}
 
-      $title='images/charts/Elevation_'.$userId.'.svg';
-      $graph->render( 700, 250, $title );
-      return $title;
-  }
+	public function executeDelete(){
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+		$rId= $this->getRequestParameter('rideid');
+		$this->rideid=$rId;
+		sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@Deleeting ride '.$this->rideid);
+		if ($this->getRequest()->getMethod() == sfRequest::POST)
+		{
+			//delete user maps
+			$c = new Criteria();
+			$c->add(UserRideMapPeer::USER_RIDE_ID,$rId);
+			$mapPoints = UserRideMapPeer::doSelect($c);
+			if($mapPoints){
+				foreach ($mapPoints as $p){
+					$p->delete();
+				}
+			}
+			//delete user_stat and equipment
+			$c = new Criteria();
+			$c->add(UserStatsPeer::USER_ID,$userId);
+			$c->add(UserStatsPeer::RIDE_KEY,$rId);
+			$s=UserStatsPeer::doSelectJoinAll($c);
+			foreach($s as $stat){
+				foreach($stat->getUserStatEquips() as $equip){
+					$equip->delete();
+				}
+				$stat->delete();
+			}
 
-  public function executeGetRideDetails($request){
-       $this->forward404unless($request->isXmlHttpRequest());
-        //get rideId
-      $this->rideId = intval($request->getParameter("param"));
+			//now delete userride
+			$c = new Criteria();
+			$c->add(UserRidesPeer::USER_ID,$userId);
+			$c->add(UserRidesPeer::USER_RIDE_ID,$rId);
+			$rides = UserRidesPeer::doSelect($c);
+			foreach($rides as $r){
+				$r->delete();
+			}
+			return $this->redirect('userrides/index');
+		}
+	}
 
-      //get userId
-      $userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
-  }
+	public function executeMap(){
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+		$this->mileagePref = sfContext::getInstance()->getUser()->getAttribute('mileage',null,'subscriber');
+		$mapMileage = $this->getRequestParameter('mapMileage');
+		$this->totalMileage=0;
+		$this->elevationChart=null;
+		//
+			
+		//get profile to get mileage preference
+		$this->lat=37.4419;
+		$this->long= -122.1419;
+		$profile = UserProfilePeer::retrieveByPK($userId);
+		if($profile){
+			$cpCity = $profile->getLatLong();
+			if($cpCity){
+				$this->lat=$cpCity->getLatitude();
+				$this->long=$cpCity->getLongitude();
+			}
+		}
+		$this->rideId = $this->getRequestParameter('rideId');
+		sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@rideId '.$this->rideId);
+		$this->coords = null;
+		$ride = UserRidesPeer::retrieveByPK($this->rideId);
+		$mapPoints=null;
+		$this->rideName="";
+		if($ride){
+			$this->rideName=$ride->getDescription();
+			//see if there are any coords
+			$c = new Criteria();
+			$c->add(UserRideMapPeer::USER_RIDE_ID,$this->rideId);
+			$mapPoints = UserRideMapPeer::doSelect($c);
+			$this->coords=UserRideMap::createMapString($mapPoints);
+		}
 
- 
+		if ($this->getRequest()->getMethod() == sfRequest::POST && $ride)
+		{
+			//need to see if we have existing route, if so then we will just delete and recreate
+			if($mapPoints){
+				foreach($mapPoints as $mp){
+					$mp->delete();
+				}
+			}
+			$coordinates = $this->getRequestParameter('coords');
+			sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@coords '.$coordinates);
+			if($coordinates){
+				$coordArray = explode('*', $coordinates);
+				$count = 0;
+				$mapPoints=array ();
+				foreach ($coordArray as $c){
+					$latLng = explode(',', $c);
+					if($latLng && count($latLng)==2){
+						$map = new UserRideMap();
+						$map->setUserRideId($this->rideId);
+						$map->setCoordOrder($count++);
+						$map->setLat($latLng[0]);
+						$map->setLong($latLng[1]);
+					//	$map->setElevation($this->lookupElevation($latLng[0], $latLng[1]));
+						sfContext::getInstance()->getLogger()->info('lat'.$latLng[0]);
+						sfContext::getInstance()->getLogger()->info('lng'.$latLng[1]);
+						$map->save();
+						array_push($mapPoints, $map);
+					}
+				}
+			}
+			$this->coords=UserRideMap::createMapString($mapPoints);
+
+			//need to save new mileage if overriden
+			if($mapMileage && $mapMileage==1){
+				$meterMile = $this->getRequestParameter('totalMileage');
+				if($meterMile){
+					sfContext::getInstance()->getLogger()->info('Overriding Map Mileage with'.$mapMileage);
+					$ride->setMileage($meterMile);
+					$ride->save();
+				}
+			}
+		}
+	}
+
+	public function executeElevation(){
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+		$this->elevationChart=null;
+		$rideId = $this->getRequestParameter('rideId');
+		//sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID '.$rideId);
+		if($rideId){
+			//sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID have rideId');
+			//get all of the map points and make sure we have lat/long
+			$c = new Criteria();
+			$c->add(UserRideMapPeer::USER_RIDE_ID,$rideId);
+			$mapPoints = UserRideMapPeer::doSelect($c);
+			if($mapPoints){
+			//	sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID have mapPoints');
+			foreach($mapPoints as $mp){
+			//	sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID have point');
+					if(!$mp->getElevation()){
+					//	sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID no elevation');
+						$mp->setElevation($this->lookupElevation($mp->getLat(), $mp->getLong()));
+						$mp->save();
+					}
+				}
+				$this->elevationChart=$this->createElevationGraph($userId,$rideId);
+			}
+		}
+	}
+
+	public function lookupElevation($lat,$long){
+		//sfContext::getInstance()->getLogger()->info('$$$$$$$$CHARTRIDEID lookup elevation'.$lat.' '.$long);
+		$wsdl="http://gisdata.usgs.gov/xmlwebservices2/elevation_service.asmx?WSDL";
+		$client=new nusoap_client($wsdl,true);
+		//  $param=array('X_Value'=>'-105.888977050781','Y_Value'=>'37.4722695947246');
+		$param=array('parameters' => array('X_Value'=>$long,'Y_Value'=>$lat));
+
+
+		//$result = $client->__soapCall('getElevation', $param);
+		$result = $client->call('getElevation', $param);
+		//var_dump($result);
+		$elevationData = $result['getElevationResult']['USGS_Elevation_Web_Service_Query']['Elevation_Query']['Elevation'];
+//		var_dump($elevationData);
+//		$xml = $result->getElevationResult->any;
+//		$xmlobj = simplexml_load_string($xml);
+//		$elevation = $xmlobj->Elevation_Query->Elevation;
+		$elevation = $elevationData;
+		//sfContext::getInstance()->getLogger()->info('1@@@@@@@@@@@@@@@ELEVATION '.$elevation);
+		return $elevation;
+	}
+
+	private function createElevationGraph($userId,$userRideId){
+		$graph = new ezcGraphLineChart();
+		$graph->title = 'Elevation Graph';
+		$graphData = reportQueries::getElevationReportDate($userRideId);
+		//echo var_dump($graphData);
+		// Add data
+		foreach ( $graphData as $cat => $data )
+		{
+			$graph->data[$cat] = new ezcGraphArrayDataSet( $data );
+		}
+		$graph->data['Average Elevation']->displayType = ezcGraph::LINE;
+		$graph->options->fillLines = 210;
+
+		$title='images/charts/Elevation_'.$userId.'.svg';
+		$graph->render( 700, 250, $title );
+		return $title;
+	}
+
+	public function executeGetRideDetails($request){
+		$this->forward404unless($request->isXmlHttpRequest());
+		//get rideId
+		$this->rideId = intval($request->getParameter("param"));
+
+		//get userId
+		$userId = sfContext::getInstance()->getUser()->getAttribute('subscriber_id',null,'subscriber');
+	}
+
+
 }

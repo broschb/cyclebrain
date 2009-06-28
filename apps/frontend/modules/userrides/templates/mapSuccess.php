@@ -229,14 +229,27 @@ showDiv("control");
      <?php echo $rideName." - " ?>
     <label id="dist" for="distance" style="text-align:right"></label>
     </div>
+    
+    <?php echo form_remote_tag(array(
+    'update'   => 'ElevationChart',
+    'url'      => 'userrides/elevation?rideId='.$rideId,
+    'loading'  => "Element.show('indicator')",
+    'complete' => "Element.hide('indicator')",
+    'script'   =>	true
 
-    <div id="ElevationChart">
-<?php if ($elevationChart): ?>
-  <object data="<?php echo '/'.$elevationChart ?>" type="image/svg+xml">
-        You need a browser capeable of SVG to display this image.
-</object>
-<?php endif; ?>
+)); ?>
+    <div id="ElevationControls">
+    <?php echo submit_tag('Generate Elevation Graph') ?>
+    </div>
+    <div style="height:20px">
+  <p id="indicator" style="display:none">
+    <?php echo image_tag('/images/ajax-loaderGreen.gif') ?> Generating Elevation Profile...
+  </p>
+  <br></br>
 </div>
+    <div id="ElevationChart">
+	</div>
+</form>
    
    <div id="map" style="width: 720px; height: 500px"></div>
 

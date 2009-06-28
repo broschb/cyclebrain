@@ -58,8 +58,10 @@
 <?php echo input_hidden_tag('statid',$statid);
     $editUrl = "Modalbox.show('userstats/edit?statid=".$statid."', {title:' Edit Ride', width: 600});return false;";
     $cancelUrl="Modalbox.hide();return false;";
-    echo link_to_function('Edit', $editUrl);
-    echo link_to_function('Cancel', $cancelUrl);
+    $deleteUrl = "Modalbox.show('userstats/delete?statid=".$statid."', {title:' Delete Ride', width: 600});return false;";
+    echo button_to_function('Edit', $editUrl);
+    echo button_to_function('Cancel', $cancelUrl);
+    echo button_to_function('Delete', $deleteUrl);
     ?>
 </div>
 </form>

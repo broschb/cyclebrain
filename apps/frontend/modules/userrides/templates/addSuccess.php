@@ -1,7 +1,7 @@
 <?php use_helper('Object'); ?>
 <?php echo form_tag('userrides/add') ?>
 
-<?=include_partial('ride_form',array('route_desc'=>$sf_params->get('ride_date'),'distance'=>$sf_params->get('ride_time'))) ?>
+<?php include_partial('ride_form',array('route_desc'=>$sf_params->get('ride_date'),'distance'=>$sf_params->get('ride_time'))) ?>
 
 <div class="submit-row">
 <input type="submit" name="Add" value="Add" />

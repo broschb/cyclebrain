@@ -10,11 +10,11 @@ class UserBikes extends BaseUserBikes
     public function getBikeMileage(){
         $c = new Criteria();
         $c->clearSelectColumns();
-        $c->addSelectColumn('SUM('.UserRidesPeer::MILEAGE.')');
+        $c->addSelectColumn('SUM('.UserStatsPeer::MILEAGE.')');
         //$c->addGroupByColumn(UserRidesPeer::MILEAGE);
         $c->add(UserStatsPeer::USER_ID,$this->getUserId());
         $c->add(UserStatsPeer::BIKE_ID,$this->getUserBikeId());
-        $c->addJoin(UserRidesPeer::USER_RIDE_ID, UserStatsPeer::RIDE_KEY);
+       // $c->addJoin(UserRidesPeer::USER_RIDE_ID, UserStatsPeer::RIDE_KEY);
         $stmt = UserStatsPeer::doSelectStmt($c);
         $sum=0;
         if($stmt){

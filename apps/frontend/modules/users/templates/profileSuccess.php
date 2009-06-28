@@ -36,6 +36,6 @@ array('width' => 400, 'height' => 180,'afterHide' => 'modalRefresh')) ?>
 
         </div>
         <?php endforeach; ?>
-        <?=button_to('edit','users/edit') ?>
+        <?php echo button_to('edit','users/edit') ?>
     </div>
 </div>

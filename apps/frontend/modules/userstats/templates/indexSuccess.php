@@ -90,7 +90,6 @@ function setUpMouseover(o,id){
                                     echo $day ?>
                                     <span id="<?php echo $dateId ?>" style="display:none" >
                                         <?php echo link_to_function(image_tag('/images/Add.png'), "Modalbox.show('userstats/add', {title:' Add Ride', width: 600});return false;") ?>
-                                        <?php echo link_to_function(image_tag('/images/Delete.png'), "Modalbox.show('userstats/add', {title:' Add Ride', width: 600});return false;") ?>
                                     </span>
                                 </span>
                             </div>
@@ -101,7 +100,7 @@ function setUpMouseover(o,id){
                                 $stats = $statsByDay[$day];
                                 foreach($stats as $s):
                                 $editUrl = "Modalbox.show('userstats/view?statid=".$s->getStatNo()."', {title:' Ride Details', width: 400});return false;";
-                                echo link_to_function('A Ride', $editUrl);
+                                echo link_to_function(utils::getMileageFromMeters($s->getMileage()).' '.utils::getMileageString(), $editUrl);
                                 ?>
                             <br>
                                 <?php

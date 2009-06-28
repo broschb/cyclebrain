@@ -13,7 +13,9 @@
     <div id="wrapper-content-1" class="main">
         <div id="pagetitle" class="pagetitle">
             <h2><span>Bikes
-                    <?php echo link_to_function(image_tag('/images/Add.png'), "Modalbox.show('userbike/add', {title:' Add Bike', width: 600});return false;") ?>
+                    <?php echo link_to_function(image_tag('/images/Add.png'), "Modalbox.show('userbike/add', {title:' Add Bike', width: 600});return false;"); 
+                    echo button_to_function('Add Equipment', "Modalbox.show('equipment/add', {title:' Add Equipment', width: 600});return false;");
+                    ?>
                 </span>
             </h2>
             </div>
@@ -28,7 +30,7 @@
             $innerTreeId='id='.$innerTreeName;
             ?>
             <div id="pagesubtopic" class="pagesubtopic">
-                <input type="image" src="/images/closed2.png" id=<?php echo $treeName ?> onclick="expandCollapseDiv(<?php echo "'".$treeName."'" ?>,<?php echo "'".$divName."'" ?>,'<?=url_for('equipment/getBikeEquipment') ?>',<?php echo $user_bikes->getUserBikeId() ?>); return false;">
+                <input type="image" src="/images/closed2.png" id=<?php echo $treeName ?> onclick="expandCollapseDiv(<?php echo "'".$treeName."'" ?>,<?php echo "'".$divName."'" ?>,'<?php echo url_for('equipment/getBikeEquipment') ?>',<?php echo $user_bikes->getUserBikeId() ?>); return false;">
                 <?php echo $user_bikes?>
                 <?php
                 $expandUrl="showHideInnerDiv('$innerTreeName','$subDivName'); return false;";

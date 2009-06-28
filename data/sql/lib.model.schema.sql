@@ -309,6 +309,7 @@ CREATE TABLE `user_stats`
 	`stat_no` INTEGER(10)  NOT NULL AUTO_INCREMENT,
 	`ride_key` INTEGER(10)  NOT NULL,
 	`bike_id` INTEGER(10)  NOT NULL,
+	`mileage` DECIMAL(10,2),
 	PRIMARY KEY (`stat_no`),
 	KEY `FK_user_stats_1`(`ride_key`),
 	KEY `FK_bike_id_constraint`(`bike_id`),
