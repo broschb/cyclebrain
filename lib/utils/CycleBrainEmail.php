@@ -17,6 +17,7 @@ class CycleBrainEmail {
     public function sendEmail($to, $from, $subject, $message,$additional_headers="")
     {
 
+    	
          # Declare SMTP Server Settings
  /*   $smtp_server = "smtp.gmail.com";
     $smtp_username = "cyclebrain@gmail.com";
@@ -71,7 +72,7 @@ class CycleBrainEmail {
     $headers .= 'To: ' . $to . "\r\n";
     $headers .= 'From: ' . $from . "\r\n\n\n";
 
-    if(mail($to,$subject,$body,$headers))
+    if(mail($to,$subject,$message,$headers))
       return true;
    return false;
    }

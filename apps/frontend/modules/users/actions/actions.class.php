@@ -265,6 +265,7 @@ public function executeAuthenticate(){
   }
 
   public function sendPasswordMail($user, $to,$newPassword){
+  	sfContext::getInstance()->getLogger()->info('@@@@@@@@@@@@@@@Sending new pass '.$newPassword);
       try
       {
           // Create the mailer and message objects
@@ -424,6 +425,7 @@ public function executeLogout()
   	 $this->user->setUserProfile($profile);
   	if($request->isMethod('post'))
   	{
+  		$userName = $this->getRequestParameter('userName');
         $fname = $this->getRequestParameter('fname');
         $lname = $this->getRequestParameter('lname');
         $email = $this->getRequestParameter('email');
@@ -476,6 +478,7 @@ public function executeLogout()
         }
 
         //set up user
+        $this->user->setUsername($userName);
          $this->user->setFname($fname);
          $this->user->setLname($lname);
          $this->user->setEmail($email);

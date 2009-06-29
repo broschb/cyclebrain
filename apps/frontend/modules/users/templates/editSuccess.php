@@ -14,6 +14,12 @@
 </script>
 <div id="wrapper-1">
     <div id="wrapper-content-1" class="main">
+ 
+ <div class="form-row">
+        <label for="lname">Username:</label>
+        <?php echo input_tag('userName', $user->getUsername()) ?>
+    </div>   
+    
  <div class="form-row">
         <label for="fname">First Name:</label>
         <?php echo input_tag('fname', $user->getFname()) ?>
